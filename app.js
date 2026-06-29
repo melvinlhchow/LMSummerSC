@@ -351,12 +351,7 @@ function renderSessions() {
         exStatus.textContent = statusLabel;
         exStatus.classList.add('neutral');
         const vBadge = node.querySelector('.video-status');
-        if (state.profile.coachOverride) {
-          vBadge.textContent = exercise.video?.status || t('noVideo');
-          vBadge.classList.add(videoBadgeClass(exercise.video?.status));
-        } else {
-          vBadge.style.display = 'none';
-        }
+        vBadge.style.display = 'none';
 
         node.querySelector('.exercise-meta').innerHTML = `
           <div class="meta-panel"><strong>${t('prescription')}</strong><div>${buildPrescription(squadData)}</div></div>
