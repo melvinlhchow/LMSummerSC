@@ -293,3 +293,8 @@ button.status-btn.is-active[data-status="skipped"] { background: var(--red-soft)
   .summary-chip-wrap { width: 100%; }
   .summary-chip { flex: 1 1 auto; }
 }
+
+/* Mobility item videos */
+.item-videos-wrap { margin-top: 12px; display: flex; flex-direction: column; gap: 20px; }
+.item-video-block { background: var(--surface); border-radius: 10px; padding: 12px; border: 1px solid var(--border); }
+.item-video-label { font-size: 0.85rem; color: var(--text-secondary); margin: 0 0 8px 0; }

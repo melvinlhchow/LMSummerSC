@@ -162,11 +162,11 @@ function renderWeekOverview() {
   const week = getCurrentWeek();
   const phase = state.data.phases.find(p => p.phase_id === week.phase_id);
   $('weekOverview').innerHTML = [
-    [t('weekLabel'), week.label],
+    [t('weekLabel'), ( state.language==='zh' && week.label_zh ? week.label_zh : week.label )],
     [t('dateRange'), `${week.date_start} to ${week.date_end}`],
-    [t('footballContext'), week.football_context],
-    [t('phase'), phase ? phase.name : week.phase_id],
-    [t('homeFocus'), week.home_sc_emphasis],
+    [t('footballContext'), ( state.language==='zh' && week.football_context_zh ? week.football_context_zh : week.football_context )],
+    [t('phase'), ( phase ? (state.language==='zh' && phase.name_zh ? phase.name_zh : phase.name) : week.phase_id )],
+    [t('homeFocus'), ( state.language==='zh' && week.home_sc_emphasis_zh ? week.home_sc_emphasis_zh : week.home_sc_emphasis )],
     [t('sessionsCount'), `${week.home_sessions_per_week} ${t('blocks')}`],
     [t('targetDuration'), `${week.target_session_duration_min} min`]
   ].map(([label, value]) => `<div class="overview-item"><strong>${label}</strong><span>${value}</span></div>`).join('');
@@ -305,7 +305,7 @@ function renderSessions() {
     const session = state.data.sessionMap[sessionId];
     const sessionState = getSessionState(sessionId);
     const sessionNode = sessionTemplate.content.firstElementChild.cloneNode(true);
-    sessionNode.querySelector('.session-title').textContent = session.name;
+    sessionNode.querySelector('.session-title').textContent = ( state.language==='zh' && session.name_zh ? session.name_zh : session.name );
     sessionNode.querySelector('.session-block-count').textContent = `${session.blocks.length} ${t('blocks')}`;
 
     const sessionComplete = Object.values(sessionState.exercises || {}).filter(v => v.status === 'complete').length;
@@ -328,8 +328,8 @@ function renderSessions() {
         const exState = sessionState.exercises?.[exerciseId] || { status: '', note: '' };
         const squadData = exercise[state.profile.squad.toLowerCase()] || {};
 
-        node.querySelector('.exercise-name').textContent = exercise.name;
-        node.querySelector('.exercise-focus').textContent = exercise.focus || exercise.type || 'Mobility';
+        node.querySelector('.exercise-name').textContent = ( state.language==='zh' && exercise.name_zh ? exercise.name_zh : exercise.name );
+        node.querySelector('.exercise-focus').textContent = ( state.language==='zh' && exercise.focus_zh ? exercise.focus_zh : (exercise.focus || exercise.type || 'Mobility') );
         const statusLabel = exState.status ? t(exState.status) : t('notStarted');
         const exStatus = node.querySelector('.exercise-status');
         exStatus.textContent = statusLabel;
@@ -346,7 +346,7 @@ function renderSessions() {
 
         const videoWrap = node.querySelector('.exercise-video-wrap');
         if (exercise.video && exercise.video.embed_url && videoAllowed(exercise)) {
-          videoWrap.innerHTML = `<iframe class="video-frame" src="${exercise.video.embed_url}" title="${exercise.name}" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="muted"><a href="${exercise.video.watch_url}" target="_blank" rel="noopener noreferrer">${t('openOnYoutube')}</a></p>`;
+          videoWrap.innerHTML = `<iframe class="video-frame" src="${exercise.video.embed_url}" title="${( state.language==='zh' && exercise.name_zh ? exercise.name_zh : exercise.name )}" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="muted"><a href="${exercise.video.watch_url}" target="_blank" rel="noopener noreferrer">${t('openOnYoutube')}</a></p>`;
         } else {
           let reason = t('unavailableVideo');
           if (exercise.video?.status === 'Pending Review') reason = t('pendingVideo');
@@ -355,7 +355,25 @@ function renderSessions() {
           videoWrap.innerHTML = `<div class="video-placeholder"><div><strong>${reason}</strong><p>${msg}</p>${exercise.video?.watch_url ? `<p><a href="${exercise.video.watch_url}" target="_blank" rel="noopener noreferrer">${t('openOnYoutube')}</a></p>` : ''}</div></div>`;
         }
 
-        node.querySelector('.cues-list').innerHTML = (exercise.coaching_cues || []).map(v => `<li>${v}</li>`).join('');
+        
+        // Mobility item_videos: show individual video per item
+        if (exercise.item_videos && exercise.item_videos.length && videoAllowed(exercise)) {
+          const ivContainer = document.createElement('div');
+          ivContainer.className = 'item-videos-wrap';
+          exercise.item_videos.forEach(iv => {
+            const label = (state.language==='zh' && iv.label_zh) ? iv.label_zh : iv.label;
+            const itemLabel = (state.language==='zh' && iv.item_zh) ? iv.item_zh : iv.item;
+            const div = document.createElement('div');
+            div.className = 'item-video-block';
+            div.innerHTML = `<p class="item-video-label"><strong>${itemLabel}</strong></p>
+              <iframe class="video-frame" src="${iv.embed_url}" title="${label}" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+              <p class="muted"><a href="${iv.watch_url}" target="_blank" rel="noopener noreferrer">${t('openOnYoutube')}: ${label}</a></p>`;
+            ivContainer.appendChild(div);
+          });
+          videoWrap.appendChild(ivContainer);
+        }
+
+        node.querySelector('.cues-list').innerHTML = ((state.language==='zh' && exercise.coaching_cues_zh && exercise.coaching_cues_zh.length ? exercise.coaching_cues_zh : exercise.coaching_cues) || []).map(v => `<li>${v}</li>`).join('');
         node.querySelector('.mistakes-list').innerHTML = (exercise.common_mistakes || []).map(v => `<li>${v}</li>`).join('');
         node.querySelector('.regression-text').innerHTML = `<h5>${t('regression')}</h5><p>${exercise.regression || '—'}</p>`;
         node.querySelector('.progression-text').innerHTML = `<h5>${t('progression')}</h5><p>${exercise.progression || '—'}</p>`;

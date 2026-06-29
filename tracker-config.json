@@ -14,6 +14,52 @@
         "hydrate well",
         "aim for good sleep quality",
         "report unusual soreness or pain"
+      ],
+      "video": {
+        "status": "Verified Exact",
+        "notes": "5 individual videos assigned for each mobility item"
+      },
+      "item_videos": [
+        {
+          "item": "couch stretch 45 sec each side",
+          "item_zh": "沙發伸展 每邊45秒",
+          "watch_url": "https://www.youtube.com/watch?v=7bW0dBwB7Dc",
+          "embed_url": "https://www.youtube.com/embed/7bW0dBwB7Dc",
+          "label": "Couch Stretch (Beginner to Advanced)",
+          "label_zh": "沙發伸展（初階至進階）"
+        },
+        {
+          "item": "adductor rock-back x8 each side",
+          "item_zh": "內收肌後搖 每邊8次",
+          "watch_url": "https://www.youtube.com/watch?v=BdfcadBYq4c",
+          "embed_url": "https://www.youtube.com/embed/BdfcadBYq4c",
+          "label": "Adductor Rock Back",
+          "label_zh": "內收肌後搖"
+        },
+        {
+          "item": "hamstring floss x8 each side",
+          "item_zh": "大腿後側彈力伸展 每邊8次",
+          "watch_url": "https://www.youtube.com/watch?v=cNk9oIUX9zM",
+          "embed_url": "https://www.youtube.com/embed/cNk9oIUX9zM",
+          "label": "Hamstring Flossing",
+          "label_zh": "大腿後側彈力伸展"
+        },
+        {
+          "item": "ankle dorsiflexion drives x10 each side",
+          "item_zh": "踝關節背屈訓練 每邊10次",
+          "watch_url": "https://www.youtube.com/watch?v=DrcnvLztwfY",
+          "embed_url": "https://www.youtube.com/embed/DrcnvLztwfY",
+          "label": "Ankle Dorsiflexion Drill",
+          "label_zh": "踝關節背屈訓練"
+        },
+        {
+          "item": "thoracic rotation x6 each side",
+          "item_zh": "胸椎旋轉 每邊6次",
+          "watch_url": "https://www.youtube.com/watch?v=hZopU1-XQtM",
+          "embed_url": "https://www.youtube.com/embed/hZopU1-XQtM",
+          "label": "Thoracic Rotation Mobility",
+          "label_zh": "胸椎旋轉活動度"
+        }
       ]
     }
   ],
