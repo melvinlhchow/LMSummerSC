@@ -246,13 +246,7 @@ button.status-btn.is-active[data-status="skipped"] { background: var(--red-soft)
   padding: 12px;
   background: var(--panel-alt);
 }
-.video-frame {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: 0;
-  border-radius: 14px;
-  background: #0f172a;
-}
+/* video-frame see mobile patch */
 .video-placeholder {
   border: 1px dashed #d4d4d4;
   background: #fafafa;
@@ -281,15 +275,19 @@ button.status-btn.is-active[data-status="skipped"] { background: var(--red-soft)
   .hero, .hero-actions { align-items: stretch; }
   .hero { flex-direction: column; }
   .hero-actions { flex-direction: row; justify-content: space-between; flex-wrap: wrap; }
-  .overview-grid, .compact-grid, .readiness-quick-grid, .detail-columns, .exercise-grid { grid-template-columns: 1fr; }
+  .detail-columns, .exercise-grid { grid-template-columns: 1fr; }
+  .overview-grid, .compact-grid { grid-template-columns: repeat(2, 1fr); }
+  .readiness-quick-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 700px) {
-  .app-shell { padding: 12px 12px 24px; }
+  .app-shell { padding: 12px 12px 80px; }
   .panel, .session-card, .block-card, .exercise-card { padding: 14px; }
-  .hero { padding: 18px; border-radius: 20px; }
-  .lang-btn, button, input, select, textarea { min-height: 48px; }
+  .hero { padding: 18px; border-radius: 20px; padding-top: 52px; }
+  button, input, select, textarea { min-height: 48px; }
+  .lang-btn { min-height: 36px; }
   .controls-actions { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
-  .session-footer { display: grid; grid-template-columns: 1fr; }
+  .overview-grid, .compact-grid { grid-template-columns: 1fr 1fr; }
+  .readiness-quick-grid { grid-template-columns: 1fr 1fr; }
   .summary-chip-wrap { width: 100%; }
   .summary-chip { flex: 1 1 auto; }
 }
@@ -298,3 +296,203 @@ button.status-btn.is-active[data-status="skipped"] { background: var(--red-soft)
 .item-videos-wrap { margin-top: 12px; display: flex; flex-direction: column; gap: 20px; }
 .item-video-block { background: var(--surface); border-radius: 10px; padding: 12px; border: 1px solid var(--border); }
 .item-video-label { font-size: 0.85rem; color: var(--text-secondary); margin: 0 0 8px 0; }
+
+
+/* ============================================================
+   MOBILE IMPROVEMENTS v5
+   ============================================================ */
+
+/* 1. Video iframe — proper aspect ratio */
+.video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: unset;
+  border: none;
+  border-radius: 10px;
+  display: block;
+}
+
+/* 2. Status buttons — stack on mobile */
+.status-btn-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+@media (max-width: 480px) {
+  .status-btn-row {
+    grid-template-columns: 1fr;
+  }
+  .status-btn-row .status-btn {
+    width: 100%;
+  }
+}
+
+/* 3. Coaching details — bigger tap target + chevron */
+.exercise-details > summary {
+  cursor: pointer;
+  padding: 14px 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+.exercise-details > summary::before {
+  content: '▶';
+  font-size: 0.7rem;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+.exercise-details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+/* 4. Block card headers — sticky */
+.block-head {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  z-index: 10;
+  padding: 10px 0;
+  margin: -4px 0 4px;
+}
+
+/* 5. Overview / readiness grid — 2-col at mid-width */
+@media (min-width: 481px) and (max-width: 979px) {
+  .overview-grid, .compact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .readiness-quick-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 6. Prescription text wrap */
+.exercise-meta .meta-panel div {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* 7. Note label styling */
+.note-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-secondary);
+}
+
+/* 8. RPE row — full width on mobile */
+.session-footer label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.session-rpe {
+  flex: 1 1 120px;
+  min-width: 80px;
+}
+@media (max-width: 700px) {
+  .session-footer label {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .session-rpe {
+    width: 100%;
+  }
+  .save-session-btn {
+    width: 100%;
+  }
+}
+
+/* 9. Fixed language toggle */
+.fixed-lang-wrap {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 999;
+}
+.hero-lang {
+  display: none;
+}
+@media (max-width: 700px) {
+  .fixed-lang-wrap {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* 10. Scroll-to-top button */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  min-height: unset;
+  border-radius: 50%;
+  background: var(--black);
+  color: var(--yellow);
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+  padding: 0;
+  line-height: 1;
+}
+.scroll-top-btn.visible {
+  display: flex;
+}
+
+/* 11. Video placeholder — reduce wasted height when no video */
+.video-placeholder {
+  min-height: 100px !important;
+  padding: 16px;
+}
+
+/* 12. Base font size bump for readability */
+@media (max-width: 700px) {
+  .overview-item span,
+  .meta-panel div,
+  .readiness-quick-grid label span {
+    font-size: 14px;
+  }
+  .exercise-name { font-size: 1rem; }
+}
+
+/* 13. Exercise card head — prevent badge overflow */
+.exercise-head {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.badge-row {
+  flex-shrink: 0;
+}
+
+/* RPE row layout */
+.rpe-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.rpe-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1 1 120px;
+}
+.rpe-label span { font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); }
+@media (max-width: 700px) {
+  .rpe-row { flex-direction: column; align-items: stretch; }
+  .rpe-label { flex: none; }
+  .session-rpe, .save-session-btn { width: 100%; }
+}

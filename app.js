@@ -398,7 +398,7 @@ function renderSessions() {
         note.value = exState.note || '';
         note.placeholder = `${t('optional')}`;
 
-        node.querySelectorAll('.status-btn').forEach(btn => {
+        node.querySelectorAll('.status-btn-row .status-btn').forEach(btn => {
           btn.textContent = t(btn.dataset.status);
           if (btn.dataset.status === exState.status) btn.classList.add('is-active');
           btn.addEventListener('click', () => {
@@ -464,9 +464,20 @@ function bindEvents() {
     saveReadinessStore();
     renderReadinessAlert(values);
   });
+    // Scroll-to-top button
+  const scrollBtn = document.getElementById('scrollTopBtn');
+  if (scrollBtn) {
+    window.addEventListener('scroll', () => {
+      scrollBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+    scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  }
+
   document.querySelectorAll('.lang-btn').forEach(btn => btn.addEventListener('click', () => {
     state.language = btn.dataset.lang;
     saveLanguage();
+    // sync all lang-btn active states across both toggles
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === state.language));
     rerender();
   }));
 }

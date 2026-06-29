@@ -100,15 +100,17 @@
       <div class="block-progress-bar"><span class="block-progress-fill"></span></div>
       <div class="blocks-container"></div>
       <div class="session-footer">
-        <label>
-          <span data-i18n="sessionRpe">Session RPE</span>
-          <select class="session-rpe">
-            <option value="">Select</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
-          </select>
-        </label>
-        <button class="secondary save-session-btn" type="button" data-i18n="saveSession">Save session</button>
+        <div class="rpe-row">
+          <label class="rpe-label">
+            <span data-i18n="sessionRpe">Session RPE</span>
+            <select class="session-rpe">
+              <option value="">Select</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+              <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+            </select>
+          </label>
+          <button class="secondary save-session-btn" type="button" data-i18n="saveSession">Save session</button>
+        </div>
       </div>
     </article>
   </template>
@@ -148,9 +150,11 @@
         <p class="safety-text"></p>
       </details>
       <div class="exercise-actions segmented-actions">
-        <button type="button" class="status-btn" data-status="complete"></button>
-        <button type="button" class="status-btn" data-status="partial"></button>
-        <button type="button" class="status-btn" data-status="skipped"></button>
+        <div class="status-btn-row">
+          <button type="button" class="status-btn" data-status="complete"></button>
+          <button type="button" class="status-btn" data-status="partial"></button>
+          <button type="button" class="status-btn" data-status="skipped"></button>
+        </div>
       </div>
       <label class="note-field compact-note">
         <span data-i18n="note">Note</span>
