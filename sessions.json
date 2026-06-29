@@ -41,6 +41,9 @@
           "mob001"
         ]
       }
+    ],
+    "mobility_block_ids": [
+      "mob001"
     ]
   },
   {
@@ -79,6 +82,9 @@
           "mob001"
         ]
       }
+    ],
+    "mobility_block_ids": [
+      "mob001"
     ]
   },
   {
@@ -125,6 +131,9 @@
           "mob001"
         ]
       }
+    ],
+    "mobility_block_ids": [
+      "mob001"
     ]
   },
   {
@@ -162,6 +171,9 @@
           "mob001"
         ]
       }
+    ],
+    "mobility_block_ids": [
+      "mob001"
     ]
   }
 ]

@@ -39,11 +39,11 @@ const I18N = {
   },
   zh: {
     academy: '理文青訓學院', title: '暑期體能訓練追蹤器', subtitle: 'U18及U22於2026/27季前準備的居家力量及核心訓練計劃。',
-    squad: '隊別', playerName: '球員姓名', week: '週次', coachOverride: '教練覆核模式', saveProfile: '儲存設定', resetWeek: '重設本週',
+    squad: '球隊', playerName: '球員姓名', week: '週次', coachOverride: '教練覆核模式', saveProfile: '儲存設定', resetWeek: '重設本週',
     currentWeekOverview: '本週概覽', weekOverviewSub: '週次會預設為目前或下一個安排中的週次。',
     readinessCheck: '訓練前狀態', readinessSub: '於第一課前作簡單輸入。', saveReadiness: '儲存狀態',
     sessions: '訓練課', sessionsSub: '按組別及按動作追蹤完成情況。', sessionRpe: '課堂RPE', saveSession: '儲存課堂',
-    coachingDetails: '教學細節', cues: '重點提示', commonMistakes: '常見錯誤', note: '備註',
+    coachingDetails: '教學細節', cues: '重點提示', commonMistakes: '常見錯誤', note: '備注',
     complete: '完成', partial: '部分完成', skipped: '跳過', notStarted: '未開始',
     prescription: '處方', equipment: '器材', space: '空間', openOnYoutube: '於YouTube開啟',
     verifiedOnly: '球員預設只會看到已確認完全匹配的影片。', pendingVideo: '影片仍待最終確認。', replacementVideo: '此影片需更換後才可向球員發放。', unavailableVideo: '影片暫不可用。',
@@ -272,23 +272,39 @@ function countSessionExercises(session) { return session.blocks.reduce((sum, blo
 
 function findMobility(id) {
   const found = (state.data.config.mobility_blocks || []).find(m => m.mobility_id === id);
-  if (!found) return { name: id, focus: 'Mobility', u18: {}, u22: {}, equipment: [], coaching_cues: [], common_mistakes: [], regression: '', progression: '', safety_note: '', video: {status: t('noVideo')} };
+  if (!found) return { name: id, focus: 'Mobility', u18: {}, u22: {}, equipment: [], coaching_cues: [], common_mistakes: [], regression: '', progression: '', safety_note: '', video: {status: t('noVideo')}, item_videos: [] };
+  const itemsEn = found.items || [];
+  const itemsZh = found.items_zh || itemsEn;
   return {
     exercise_id: found.mobility_id,
     name: found.name,
+    name_zh: found.name_zh || found.name,
     type: 'mobility', focus: 'recovery',
-    u18: { sets: 1, reps: found.items.join(' · ') }, u22: { sets: 1, reps: found.items.join(' · ') },
-    coaching_cues: found.items, common_mistakes: [], regression: 'Shorter duration', progression: 'Add controlled breathing', equipment: [], space_required: 'small',
-    safety_note: found.recovery_reminders?.join(' · ') || 'Use relaxed positions', video: { status: t('noVideo'), watch_url: '', embed_url: '' }
+    u18: { sets: 1, reps: itemsEn.join(' · ') }, u22: { sets: 1, reps: itemsEn.join(' · ') },
+    coaching_cues: itemsEn,
+    coaching_cues_zh: itemsZh,
+    common_mistakes: found.common_mistakes || [],
+    common_mistakes_zh: found.common_mistakes_zh || [],
+    regression: found.regression || '',
+    regression_zh: found.regression_zh || '',
+    progression: found.progression || '',
+    progression_zh: found.progression_zh || '',
+    equipment: found.equipment || [],
+    space_required: found.space_required || 'small',
+    safety_note: found.recovery_reminders?.join(' · ') || '',
+    safety_note_zh: found.recovery_reminders_zh?.join(' · ') || '',
+    video: found.video || { status: t('noVideo'), watch_url: '', embed_url: '' },
+    item_videos: found.item_videos || []
   };
 }
 
 function buildPrescription(squadData) {
   const parts = [];
-  if (squadData.sets) parts.push(`${squadData.sets} set(s)`);
+  const isZh = state.language === 'zh';
+  if (squadData.sets) parts.push(isZh ? `${squadData.sets} 組` : `${squadData.sets} set(s)`);
   if (squadData.reps) parts.push(`${squadData.reps}`);
-  if (squadData.tempo) parts.push(`Tempo ${squadData.tempo}`);
-  if (squadData.rest_seconds) parts.push(`Rest ${squadData.rest_seconds}s`);
+  if (squadData.tempo) parts.push(isZh ? `節奏 ${squadData.tempo}` : `Tempo ${squadData.tempo}`);
+  if (squadData.rest_seconds) parts.push(isZh ? `休息 ${squadData.rest_seconds}秒` : `Rest ${squadData.rest_seconds}s`);
   return parts.join(' · ') || '—';
 }
 function formatList(arr) { return !arr || !arr.length ? t('none') : arr.join(', '); }
@@ -345,7 +361,7 @@ function renderSessions() {
         node.querySelector('.exercise-meta').innerHTML = `
           <div class="meta-panel"><strong>${t('prescription')}</strong><div>${buildPrescription(squadData)}</div></div>
           <div class="meta-panel"><strong>${t('equipment')}</strong><div>${formatList(exercise.equipment)}</div></div>
-          <div class="meta-panel"><strong>${t('space')}</strong><div>${exercise.space_required || t('small')}</div></div>
+          <div class="meta-panel"><strong>${t('space')}</strong><div>${(state.language==='zh' ? (exercise.space_required==='small'?'小空間':exercise.space_required==='medium'?'中等空間':exercise.space_required==='large'?'大空間':exercise.space_required||t('small')) : exercise.space_required || t('small'))}</div></div>
         `;
 
         const videoWrap = node.querySelector('.exercise-video-wrap');
