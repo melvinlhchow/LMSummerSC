@@ -1,0 +1,167 @@
+[
+  {
+    "session_id": "sessionA",
+    "name": "Session A",
+    "blocks": [
+      {
+        "block_id": "warmup",
+        "name": "Warm-up",
+        "exercise_ids": [
+          "wu001"
+        ]
+      },
+      {
+        "block_id": "main_strength",
+        "name": "Main Strength",
+        "exercise_ids": [
+          "ex001",
+          "ex002",
+          "ex003"
+        ]
+      },
+      {
+        "block_id": "core_trunk",
+        "name": "Core / Trunk",
+        "exercise_ids": [
+          "ex004",
+          "ex005"
+        ]
+      },
+      {
+        "block_id": "lower_leg",
+        "name": "Lower Leg",
+        "exercise_ids": [
+          "ex006"
+        ]
+      },
+      {
+        "block_id": "mobility_finish",
+        "name": "Mobility Finish",
+        "exercise_ids": [
+          "mob001"
+        ]
+      }
+    ]
+  },
+  {
+    "session_id": "sessionB",
+    "name": "Session B",
+    "blocks": [
+      {
+        "block_id": "warmup",
+        "name": "Warm-up",
+        "exercise_ids": [
+          "wu001"
+        ]
+      },
+      {
+        "block_id": "main_strength",
+        "name": "Main Strength",
+        "exercise_ids": [
+          "ex007",
+          "ex008",
+          "ex014"
+        ]
+      },
+      {
+        "block_id": "core_trunk",
+        "name": "Core / Trunk",
+        "exercise_ids": [
+          "ex009",
+          "ex010",
+          "ex017"
+        ]
+      },
+      {
+        "block_id": "mobility_finish",
+        "name": "Mobility Finish",
+        "exercise_ids": [
+          "mob001"
+        ]
+      }
+    ]
+  },
+  {
+    "session_id": "sessionC",
+    "name": "Session C",
+    "blocks": [
+      {
+        "block_id": "warmup",
+        "name": "Warm-up",
+        "exercise_ids": [
+          "wu001"
+        ]
+      },
+      {
+        "block_id": "main_strength",
+        "name": "Main Strength",
+        "exercise_ids": [
+          "ex011",
+          "ex019",
+          "ex015",
+          "ex022"
+        ]
+      },
+      {
+        "block_id": "core_trunk",
+        "name": "Core / Trunk",
+        "exercise_ids": [
+          "ex012",
+          "ex016"
+        ]
+      },
+      {
+        "block_id": "optional_prehab",
+        "name": "Optional Prehab / Conditioning",
+        "exercise_ids": [
+          "ex018",
+          "ex023"
+        ]
+      },
+      {
+        "block_id": "mobility_finish",
+        "name": "Mobility Finish",
+        "exercise_ids": [
+          "mob001"
+        ]
+      }
+    ]
+  },
+  {
+    "session_id": "sessionA-lite",
+    "name": "Session A Lite",
+    "blocks": [
+      {
+        "block_id": "warmup",
+        "name": "Warm-up",
+        "exercise_ids": [
+          "wu001"
+        ]
+      },
+      {
+        "block_id": "main_strength",
+        "name": "Main Strength",
+        "exercise_ids": [
+          "ex001",
+          "ex003",
+          "ex014"
+        ]
+      },
+      {
+        "block_id": "core_trunk",
+        "name": "Core / Trunk",
+        "exercise_ids": [
+          "ex004",
+          "ex017"
+        ]
+      },
+      {
+        "block_id": "mobility_finish",
+        "name": "Mobility Finish",
+        "exercise_ids": [
+          "mob001"
+        ]
+      }
+    ]
+  }
+]

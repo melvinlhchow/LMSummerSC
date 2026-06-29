@@ -1,0 +1,109 @@
+[
+  {
+    "week_id": "week1",
+    "label": "Week 1",
+    "date_start": "2026-06-30",
+    "date_end": "2026-07-06",
+    "phase_id": "phase1",
+    "football_context": "Off-pitch only",
+    "home_sc_emphasis": "Movement quality, trunk control, general strength",
+    "home_sessions_per_week": 3,
+    "target_session_duration_min": 40,
+    "session_ids": [
+      "sessionA",
+      "sessionB",
+      "sessionC"
+    ]
+  },
+  {
+    "week_id": "week2",
+    "label": "Week 2",
+    "date_start": "2026-07-07",
+    "date_end": "2026-07-13",
+    "phase_id": "phase1",
+    "football_context": "Pitch training resumes at 1 session per week",
+    "home_sc_emphasis": "Strength base with controlled fatigue",
+    "home_sessions_per_week": 3,
+    "target_session_duration_min": 40,
+    "session_ids": [
+      "sessionA",
+      "sessionB",
+      "sessionC"
+    ]
+  },
+  {
+    "week_id": "week3",
+    "label": "Week 3",
+    "date_start": "2026-07-14",
+    "date_end": "2026-07-20",
+    "phase_id": "phase2",
+    "football_context": "1 pitch session per week",
+    "home_sc_emphasis": "Main summer loading week",
+    "home_sessions_per_week": 3,
+    "target_session_duration_min": 42,
+    "session_ids": [
+      "sessionA",
+      "sessionB",
+      "sessionC"
+    ]
+  },
+  {
+    "week_id": "week4",
+    "label": "Week 4",
+    "date_start": "2026-07-21",
+    "date_end": "2026-07-27",
+    "phase_id": "phase2",
+    "football_context": "Transition week before football load increases",
+    "home_sc_emphasis": "Slight deload while maintaining quality",
+    "home_sessions_per_week": 2,
+    "target_session_duration_min": 35,
+    "session_ids": [
+      "sessionA",
+      "sessionB"
+    ]
+  },
+  {
+    "week_id": "week5",
+    "label": "Week 5",
+    "date_start": "2026-07-28",
+    "date_end": "2026-08-03",
+    "phase_id": "phase2",
+    "football_context": "2 pitch sessions per week",
+    "home_sc_emphasis": "Maintain strength and preventive work",
+    "home_sessions_per_week": 2,
+    "target_session_duration_min": 35,
+    "session_ids": [
+      "sessionA",
+      "sessionB"
+    ]
+  },
+  {
+    "week_id": "week6",
+    "label": "Week 6",
+    "date_start": "2026-08-04",
+    "date_end": "2026-08-10",
+    "phase_id": "phase3",
+    "football_context": "2 pitch sessions per week",
+    "home_sc_emphasis": "Maintain strength, lower fatigue",
+    "home_sessions_per_week": 2,
+    "target_session_duration_min": 30,
+    "session_ids": [
+      "sessionA",
+      "sessionB"
+    ]
+  },
+  {
+    "week_id": "week7",
+    "label": "Week 7",
+    "date_start": "2026-08-11",
+    "date_end": "2026-08-16",
+    "phase_id": "phase3",
+    "football_context": "Toward 3 pitch sessions plus gym",
+    "home_sc_emphasis": "Short maintenance work only",
+    "home_sessions_per_week": 1,
+    "target_session_duration_min": 25,
+    "session_ids": [
+      "sessionA-lite"
+    ]
+  }
+]

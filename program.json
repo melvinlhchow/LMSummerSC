@@ -1,0 +1,59 @@
+{
+  "program": {
+    "program_id": "lee-man-summer-sc-2026",
+    "title": "Lee Man Summer S&C 2026",
+    "season": "2026-27",
+    "squads": [
+      "U18",
+      "U22"
+    ],
+    "start_date": "2026-06-30",
+    "end_date": "2026-08-16",
+    "purpose": "Home-based summer strength and conditioning program before full return to 26/27 football training",
+    "principles": [
+      "movement quality",
+      "trunk and core control",
+      "general strength",
+      "posterior chain development",
+      "groin and adductor resilience",
+      "calf and ankle capacity",
+      "minimal equipment",
+      "exact-match exercise video references only for players"
+    ]
+  },
+  "phases": [
+    {
+      "phase_id": "phase1",
+      "name": "Phase 1",
+      "date_start": "2026-06-30",
+      "date_end": "2026-07-13",
+      "focus": [
+        "rebuild movement quality",
+        "trunk control",
+        "general strength foundation"
+      ]
+    },
+    {
+      "phase_id": "phase2",
+      "name": "Phase 2",
+      "date_start": "2026-07-14",
+      "date_end": "2026-08-02",
+      "focus": [
+        "increase volume",
+        "increase unilateral loading",
+        "maintain hamstring groin and calf work"
+      ]
+    },
+    {
+      "phase_id": "phase3",
+      "name": "Phase 3",
+      "date_start": "2026-08-03",
+      "date_end": "2026-08-16",
+      "focus": [
+        "maintain strength",
+        "reduce home volume",
+        "support return to higher football and gym load"
+      ]
+    }
+  ]
+}

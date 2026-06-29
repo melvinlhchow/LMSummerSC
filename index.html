@@ -3,58 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lee Man Summer S&C Tracker v3</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#f7f6f2;--surface:#f9f8f5;--surface2:#fbfbf9;--offset:#edeae5;--text:#28251d;--muted:#67655f;--border:#d4d1ca;--primary:#01696f;--primary2:#006494;--highlight:#cedcd8;--shadow:0 10px 30px rgba(40,37,29,.08);--font:'Inter','Noto Sans TC',sans-serif}
-    [data-theme="dark"]{--bg:#171614;--surface:#1c1b19;--surface2:#201f1d;--offset:#22211f;--text:#cdccca;--muted:#9a9894;--border:#393836;--primary:#4f98a3;--primary2:#72a8d1;--highlight:#313b3b;--shadow:0 12px 36px rgba(0,0,0,.32)}
-    *{box-sizing:border-box} body{margin:0;font-family:var(--font);background:radial-gradient(circle at top right,var(--highlight),transparent 22%),var(--bg);color:var(--text)} button,input,select{font:inherit} a{color:var(--primary);text-decoration:none}
-    .shell{max-width:1320px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:20px}.brand{display:flex;gap:14px;align-items:center}.logo{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--primary),var(--primary2));display:grid;place-items:center;color:#fff;box-shadow:var(--shadow)} h1,h2,h3,h4,p{margin:0}.sub{color:var(--muted);margin-top:4px;font-size:.95rem}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{background:var(--surface);border:1px solid rgba(40,37,29,.12);color:var(--text);padding:.8rem 1rem;border-radius:999px;cursor:pointer}.btn.primary{background:var(--primary);color:#fff;border-color:transparent}
-    .hero{display:grid;grid-template-columns:1.2fr .95fr;gap:16px;margin-bottom:18px}.panel{background:color-mix(in srgb,var(--surface) 94%,transparent);border:1px solid rgba(40,37,29,.1);border-radius:20px;box-shadow:var(--shadow)}.heroCard,.controls,.section,.footer{padding:20px}.badge{display:inline-flex;background:var(--highlight);color:var(--primary);padding:.35rem .7rem;border-radius:999px;font-size:.78rem;font-weight:700;margin-bottom:10px}.heroTitle{font-size:clamp(2rem,3vw,3.2rem);line-height:.98;letter-spacing:-.03em;margin-bottom:12px}.heroText{color:var(--muted);max-width:62ch}.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}.metaItem{padding:14px;border-radius:14px;background:var(--surface2);border:1px solid rgba(40,37,29,.08)}.k{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.v{margin-top:4px;font-size:1.2rem;font-weight:800}
-    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.field label{display:block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}.field input,.field select{width:100%;padding:.95rem 1rem;border-radius:14px;border:1px solid rgba(40,37,29,.12);background:var(--surface2);color:var(--text)}.tip{margin-top:10px;color:var(--muted);font-size:.95rem}.bar{height:10px;background:var(--offset);border-radius:999px;overflow:hidden;margin-top:14px}.bar>span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--primary2))}
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}.stat{padding:18px}.num{font-size:1.85rem;font-weight:800;margin-top:8px}.layout{display:grid;grid-template-columns:.92fr 1.78fr;gap:16px}.section h3{margin-bottom:12px;font-size:1.12rem}.weeks{display:grid;gap:8px}.week{width:100%;text-align:left;padding:14px;border-radius:14px;border:1px solid rgba(40,37,29,.08);background:var(--surface2);color:var(--text);cursor:pointer}.week.active{background:var(--highlight)}.week span{display:block;color:var(--muted);font-size:.92rem;margin-top:3px}
-    .list{margin:0;padding-left:18px;display:grid;gap:8px;color:var(--muted)}.session{padding:20px;border-top:1px solid var(--border)}.session:first-child{border-top:0}.sessionHead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:14px}.sessionTitle{font-size:1.18rem}.exerciseList{display:grid;gap:12px}.exercise{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:14px;border-radius:14px;background:var(--surface2);border:1px solid rgba(40,37,29,.08)}.exercise.done{background:color-mix(in srgb,var(--highlight) 68%,var(--surface2))}.exercise input{width:20px;height:20px;margin-top:2px;accent-color:var(--primary)}.pills{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.pill{background:var(--offset);padding:.32rem .68rem;border-radius:999px;font-size:.8rem;color:var(--muted)}.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:10px}.videoCard{background:var(--surface);border:1px solid rgba(40,37,29,.08);border-radius:14px;overflow:hidden}.videoTitle{padding:.55rem .75rem;font-size:.88rem;color:var(--muted);border-bottom:1px solid rgba(40,37,29,.08)}.videoWrap{position:relative;padding-top:56.25%}.videoWrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.footer{margin-top:16px;color:var(--muted)}
-    @media(max-width:980px){.hero,.layout{grid-template-columns:1fr}.stats,.meta,.grid2{grid-template-columns:repeat(2,1fr)}} @media(max-width:640px){.stats,.meta,.grid2{grid-template-columns:1fr}.heroCard,.controls,.section,.session,.footer{padding:16px}}
-  </style>
+  <title>Lee Man Summer S&C Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div class="shell">
-  <div class="top">
-    <div class="brand"><div class="logo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 18L10 6l4 8 5-10"/><path d="M4 19h16"/></svg></div><div><h1 id="title"></h1><p class="sub" id="subtitle"></p></div></div>
-    <div class="actions"><button class="btn" id="lang"></button><button class="btn" id="theme">🌙</button><button class="btn" id="resetWeek"></button><button class="btn primary" id="resetAll"></button></div>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="academy">Lee Man Youth Academy</p>
+        <h1 data-i18n="title">Summer S&C Tracker</h1>
+        <p class="subtitle" data-i18n="subtitle">U18 and U22 home strength and core program for the 2026/27 build-up.</p>
+      </div>
+      <div class="hero-actions">
+        <div class="hero-meta">
+          <span class="pill" id="programSeason">Season</span>
+          <span class="pill" id="programDates">Dates</span>
+        </div>
+        <div class="lang-toggle" role="tablist" aria-label="Language toggle">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="zh" type="button">繁</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel controls-panel">
+      <div class="controls-grid compact-grid">
+        <label>
+          <span data-i18n="squad">Squad</span>
+          <select id="squadSelect"></select>
+        </label>
+        <label>
+          <span data-i18n="playerName">Player name</span>
+          <input id="playerName" type="text" placeholder="Optional" />
+        </label>
+        <label>
+          <span data-i18n="week">Week</span>
+          <select id="weekSelect"></select>
+        </label>
+        <label>
+          <span data-i18n="coachOverride">Coach override</span>
+          <select id="overrideSelect">
+            <option value="false" selected>Off</option>
+            <option value="true">On</option>
+          </select>
+        </label>
+      </div>
+      <div class="controls-actions">
+        <button id="saveIdentityBtn" class="primary" data-i18n="saveProfile">Save profile</button>
+        <button id="resetWeekBtn" class="secondary" data-i18n="resetWeek">Reset selected week</button>
+      </div>
+    </section>
+
+    <section class="panel top-summary-panel">
+      <div class="panel-head stacked-mobile">
+        <div>
+          <h2 data-i18n="currentWeekOverview">Current week overview</h2>
+          <p class="muted" data-i18n="weekOverviewSub">Week defaults to the current or next scheduled week.</p>
+        </div>
+        <div class="summary-chip-wrap" id="topProgressChips"></div>
+      </div>
+      <div id="weekOverview" class="overview-grid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head stacked-mobile">
+        <div>
+          <h2 data-i18n="readinessCheck">Readiness check</h2>
+          <p class="muted" data-i18n="readinessSub">Light input before the first session.</p>
+        </div>
+        <button id="saveReadinessBtn" class="secondary" data-i18n="saveReadiness">Save readiness</button>
+      </div>
+      <form id="readinessForm" class="readiness-quick-grid"></form>
+      <div id="readinessAlert" class="alert hidden"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head stacked-mobile">
+        <div>
+          <h2 data-i18n="sessions">Sessions</h2>
+          <p class="muted" data-i18n="sessionsSub">Per-block and per-exercise completion tracking.</p>
+        </div>
+      </div>
+      <div id="sessionsContainer" class="sessions-stack"></div>
+    </section>
   </div>
-  <section class="hero">
-    <div class="panel heroCard"><div class="badge" id="heroBadge"></div><h2 class="heroTitle" id="heroTitle"></h2><p class="heroText" id="heroText"></p><div class="meta"><div class="metaItem"><div class="k" id="m1k"></div><div class="v" id="m1v"></div></div><div class="metaItem"><div class="k" id="m2k"></div><div class="v" id="m2v"></div></div><div class="metaItem"><div class="k" id="m3k"></div><div class="v" id="m3v"></div></div></div></div>
-    <div class="panel controls"><div class="grid2"><div class="field"><label id="squadLabel" for="squad"></label><select id="squad"><option>U18</option><option>U22</option></select></div><div class="field"><label id="nameLabel" for="playerName"></label><input id="playerName" type="text"></div></div><p class="tip" id="tip"></p><div class="bar"><span id="bar"></span></div></div>
-  </section>
-  <section class="stats"><div class="panel stat"><div class="k" id="s1k"></div><div class="num" id="overall"></div></div><div class="panel stat"><div class="k" id="s2k"></div><div class="num" id="weekNum"></div></div><div class="panel stat"><div class="k" id="s3k"></div><div class="num" id="doneCount"></div></div><div class="panel stat"><div class="k" id="s4k"></div><div class="num" id="structure"></div></div></section>
-  <section class="layout">
-    <aside style="display:grid;gap:16px"><div class="panel section"><h3 id="weeksHeader"></h3><div class="weeks" id="weeks"></div></div><div class="panel section"><h3 id="warmHeader"></h3><ul class="list" id="warmList"></ul></div><div class="panel section"><h3 id="ruleHeader"></h3><ul class="list" id="ruleList"></ul></div><div class="panel section"><h3 id="mobHeader"></h3><ul class="list" id="mobList"></ul></div></aside>
-    <main><div class="panel" id="sessions"></div><div class="panel footer" id="footer"></div></main>
-  </section>
-</div>
-<script>
-const videos={fifaPlaylist:['FIFA 11+ Playlist','https://www.youtube.com/embed/videoseries?list=PLWrJzdUX9i5ywhgsDGJcrLiZYoltVmn_h'],fifaRun:['FIFA 11+ Running','https://www.youtube.com/embed/pK5jcQalrSs'],fifaPlank:['FIFA 11+ Bench / Plank','https://www.youtube.com/embed/gf-XEapqXPU'],splitSquat:['Split Squat','https://www.youtube.com/embed/zCsZwLeXrCg'],splitSquatAlt:['Split Squat Guide','https://www.youtube.com/embed/SGHnCftrZkA'],hamSlider:['Hamstring Slider Curl','https://www.youtube.com/embed/HAQpsaX3s2o'],hamSliderAlt:['Slider Curl Alt','https://www.youtube.com/embed/p-V7uBUHeLc'],nordic:['Nordic Hamstring','https://www.youtube.com/embed/8t2gEoXKm_Q'],coreBasics:['Core Basics','https://www.youtube.com/embed/-Mb4yguhNEw'],singleLegBridge:['Single-Leg Glute Bridge','https://www.youtube.com/embed/b1zTCyGJXCQ'],worldsGreatest:['Inchworm + World\'s Greatest Stretch','https://www.youtube.com/embed/O5pKqyMKPh8'],reverseLunge:['Reverse Lunge','https://www.youtube.com/embed/Vns8_kYBrc8'],prisonerLunge:['Prisoner Reverse Lunge','https://www.youtube.com/embed/GXpl_69wi4I'],prisonerSquat:['Air / Prisoner Squat','https://www.youtube.com/embed/EB0vMFPpnjA'],pikePushup:['Pike Push-Up','https://www.youtube.com/embed/3r3tvRF1tVA'],copenhagen:['Copenhagen Plank','https://www.youtube.com/embed/TGA_mHHK4vU'],bearCrawl:['Bear Crawl Variations','https://www.youtube.com/embed/CSNZK3e4t9Q'],mobility5:['Soccer Hip Mobility 5 min','https://www.youtube.com/embed/5NN9SuYO2YU'],mobility10:['10 Minute Soccer Mobility','https://www.youtube.com/embed/sDPClC7NvlY']};
-const t={en:{title:'Lee Man Summer S&C Tracker',subtitle:'Bilingual home strength and conditioning planner for U18 and U22 players',heroBadge:'Summer 2026 · Home Block',heroTitle:'Train well at home. Return stronger for pre-season.',heroText:'This tool helps players follow the Lee Man summer S&C block, track weekly completion, and watch embedded reference videos in English and Traditional Chinese.',m1k:'Phases',m1v:'3 phases',m2k:'Focus',m2v:'Core + Strength',m3k:'Equipment',m3v:'Minimal / At home',squad:'Squad',name:'Player name',tip:'Tip: U18 should usually use the lower end of the rep range; U22 can use the higher end or one extra set on the main strength work.',s1:'Overall completion',s2:'Current week',s3:'Completed exercises',s4:'Weekly structure',weeks:'Weeks',warm:'Warm-up every session',rules:'Player rules',mob:'Mobility considerations',resetWeek:'Reset week',resetAll:'Reset all',footer:'This is a player-facing tracker for home compliance. For pain, injury symptoms, or unusual fatigue, players should report to coaching or medical staff rather than forcing completion.',cue:'Cue',structure:'Structure',phase:'Phase',note:'Team context',complete:'Complete',warmItems:['60 sec jog on the spot','20 sec high knees','20 sec heel flicks','20 sec lateral shuffle each way','6 reps each side world’s greatest stretch','8 reps each side hip opener','10 inchworms','2 x 20 sec front plank','2 x 20 sec pogo hops'],ruleItems:['Use controlled tempo: 2-3 seconds down, controlled up.','Leave 1-3 reps in reserve on most sets; do not chase failure.','Rest 45-75 sec on core/accessory work, 75-120 sec on main leg work.','If pain appears, stop and report instead of forcing the exercise.','Mark each exercise only after all sets are completed properly.'],mobItems:['Add 5-10 minutes of hip, ankle, and T-spine mobility 2-3 times per week.','Use the recovery day to restore range rather than create fatigue.','Players with tight groins, hamstrings, or ankles should add an extra short mobility block after football training.','Mobility should support positions needed for squatting, lunging, sprinting, and changing direction.'],weeksData:[['w1','Week 1','30 Jun-5 Jul','Phase 1','Off-pitch only','A / B / C'],['w2','Week 2','6 Jul-12 Jul','Phase 1','Pitch resumes once from 8 Jul','A / B / C'],['w3','Week 3','13 Jul-19 Jul','Phase 2','1 pitch session per week','A / B / C'],['w4','Week 4','20 Jul-26 Jul','Phase 2','Highest home loading week','A / B / C'],['w5','Week 5','27 Jul-2 Aug','Phase 3','2 pitch sessions per week begin','A / B / Recovery'],['w6','Week 6','3 Aug-9 Aug','Phase 3','Maintain around football load','A / C / Recovery'],['w7','Week 7','10 Aug-16 Aug','Phase 3','Taper slightly before fuller preseason load','B / C / Recovery']]},zh:{title:'理文暑期體能訓練追蹤器',subtitle:'U18及U22球員雙語居家體能與力量計劃',heroBadge:'2026 夏季 · 居家計劃',heroTitle:'在家好好訓練，季前回歸時更強。',heroText:'此工具協助球員跟進理文暑期體能訓練、記錄每週完成情況，並以內嵌影片提供英文及繁體中文參考。',m1k:'階段',m1v:'3個階段',m2k:'重點',m2v:'核心 + 力量',m3k:'器材',m3v:'簡單 / 在家可做',squad:'隊別',name:'球員姓名',tip:'提示：U18通常使用較低次數範圍；U22可使用較高次數，或於主要力量動作加一組。',s1:'整體完成度',s2:'目前週次',s3:'已完成動作',s4:'每週結構',weeks:'週次',warm:'每課必做熱身',rules:'球員守則',mob:'活動度注意事項',resetWeek:'重設本週',resetAll:'全部重設',footer:'此工具供球員在家記錄完成情況。如有痛楚、受傷徵狀或異常疲勞，應向教練或醫療團隊匯報，不應勉強完成。',cue:'提示',structure:'結構',phase:'階段',note:'球隊安排',complete:'完成',warmItems:['原地慢跑60秒','高抬腿20秒','後踢腿20秒','左右側移各20秒','世界最佳伸展每邊6次','開髖動作每邊8次','前行毛蟲10次','前平板2組，每組20秒','小幅彈跳2組，每組20秒'],ruleItems:['節奏受控：下降2-3秒，起身有控制。','大部分組數保留1-3次餘力，不要做到力竭。','核心/輔助動作休息45-75秒；主要腿部動作休息75-120秒。','如出現痛楚，應停止並匯報，不要勉強完成。','完成所有組數且動作質素達標後，才勾選完成。'],mobItems:['每週加做2-3次，每次5-10分鐘髖、足踝及胸椎活動度。','恢復日的活動度目的是回復活動幅度，不是增加疲勞。','如腹股溝、腿後肌或足踝較緊，可於足球課後額外加入短時間活動度訓練。','活動度訓練應幫助深蹲、弓步、衝刺及轉向所需姿勢。'],weeksData:[['w1','第1週','6月30日-7月5日','第1階段','未恢復場上訓練','A / B / C'],['w2','第2週','7月6日-7月12日','第1階段','7月8日起每週1課場上訓練','A / B / C'],['w3','第3週','7月13日-7月19日','第2階段','每週1課場上訓練','A / B / C'],['w4','第4週','7月20日-7月26日','第2階段','居家負荷最高的一週','A / B / C'],['w5','第5週','7月27日-8月2日','第3階段','開始每週2課場上訓練','A / B / Recovery'],['w6','第6週','8月3日-8月9日','第3階段','配合足球訓練維持力量','A / C / Recovery'],['w7','第7週','8月10日-8月16日','第3階段','在更完整季前負荷前稍作減量','B / C / Recovery']]}};
-function E(en,zh,preEn,preZh,cueEn,cueZh,vids){return{name:{en,zh},pre:{en:preEn,zh:preZh},cue:{en:cueEn,zh:cueZh},vids}} function S(code,en,zh,ex){return{code,en,zh,ex}}
-const wk={w1:[S('A','Lower + Core','下肢 + 核心',[E('Split squat','前後分腿蹲','3 x 8 each leg','3組 x 每邊8次','Chest tall, front foot flat, knee tracks straight.','挺胸，前腳踩實，膝蓋向腳尖方向。',['splitSquat','splitSquatAlt']),E('Glute bridge','臀橋','3 x 12','3組 x 12次','Drive through heels and squeeze glutes.','腳跟發力，頂起時收緊臀部。',['coreBasics','singleLegBridge']),E('Push-up','掌上壓','3 x 8','3組 x 8次','Body in one line, elbows controlled.','身體成一直線，手肘有控制。',['coreBasics']),E('Front plank','前平板','3 x 25 sec','3組 x 25秒','Ribs down, glutes tight.','收肋骨，夾緊臀部。',['fifaPlank','coreBasics']),E('Dead bug','死蟲式','3 x 6 each side','3組 x 每邊6次','Keep lower back quiet.','保持下背穩定貼地。',['coreBasics']),E('Calf raise','提踵','3 x 15','3組 x 15次','Full range, slow down phase.','做足幅度，下降慢。',['mobility5'])]),S('B','Upper + Trunk + Unilateral','上肢 + 軀幹 + 單腳',[E('Reverse lunge','後跨弓步','3 x 8 each leg','3組 x 每邊8次','Step back softly, stay balanced.','向後踏步輕柔，保持平衡。',['reverseLunge','prisonerLunge']),E('Backpack row','背包划船','3 x 10','3組 x 10次','Pull elbows back, chest open.','手肘向後拉，胸口打開。',['coreBasics']),E('Side plank','側平板','3 x 20 sec each side','3組 x 每邊20秒','Straight line ear-hip-ankle.','耳、肩、髖、踝成一直線。',['coreBasics']),E('Bird dog','鳥狗式','3 x 6 each side','3組 x 每邊6次','Reach long without twisting.','伸長四肢，但不要扭腰。',['coreBasics']),E('Prisoner squat','徒手深蹲','3 x 12','3組 x 12次','Sit between hips, chest proud.','臀部向後坐，胸口保持打開。',['prisonerSquat']),E('Hollow hold','空心支撐','3 x 20 sec','3組 x 20秒','Low back stays down.','下背保持穩定。',['coreBasics'])]),S('C','Hamstrings + Full Body','腿後肌 + 全身',[E('Squat','深蹲','3 x 12','3組 x 12次','Control the lowering phase.','下降要有控制。',['prisonerSquat']),E('Hamstring slider curl','滑動腿屈曲','3 x 6','3組 x 6次','Hips stay high, move slowly out.','臀部保持提起，向外伸時慢。',['hamSlider','hamSliderAlt']),E('Pike push-up','屈髖掌上壓','3 x 6','3組 x 6次','Push the floor away.','用力推地。',['pikePushup']),E('Bear crawl','熊爬','3 x 20 sec','3組 x 20秒','Small controlled steps.','小步而有控制。',['bearCrawl']),E('Copenhagen side plank','哥本哈根側平板','2 x 15 sec each side','2組 x 每邊15秒','Short lever, hips stay up.','短槓桿版本，臀部不要掉。',['copenhagen']),E('Mountain climber','登山者','3 x 20 sec','3組 x 20秒','Fast feet, quiet trunk.','腳步快，軀幹穩。',['coreBasics'])])],w2:[],w3:[],w4:[],w5:[],w6:[],w7:[]};
-// reuse week1 pattern with later progressions to keep file manageable
-wk.w2=[S('A','Lower + Core','下肢 + 核心',[E('Split squat','前後分腿蹲','3 x 9 each leg','3組 x 每邊9次','Stay tall through the torso.','軀幹保持挺直。',['splitSquat']),E('Single-leg glute bridge','單腳臀橋','3 x 8 each leg','3組 x 每邊8次','Pelvis level throughout.','骨盆保持平衡。',['singleLegBridge']),E('Push-up','掌上壓','3 x 9','3組 x 9次','Body in one line.','身體成一直線。',['coreBasics']),E('Front plank','前平板','3 x 30 sec','3組 x 30秒','Brace and breathe.','收緊核心並呼吸。',['fifaPlank']),E('Dead bug','死蟲式','3 x 7 each side','3組 x 每邊7次','Move slowly.','慢慢做。',['coreBasics']),E('Calf raise','提踵','3 x 16','3組 x 16次','Pause at top.','頂端停一停。',['mobility5'])]),S('B','Upper + Trunk + Unilateral','上肢 + 軀幹 + 單腳',[E('Reverse lunge','後跨弓步','3 x 9 each leg','3組 x 每邊9次','Stay balanced on front foot.','前腳穩定受力。',['reverseLunge','prisonerLunge']),E('Backpack row','背包划船','3 x 12','3組 x 12次','Elbows back and down.','手肘向後向下。',['coreBasics']),E('Side plank','側平板','3 x 25 sec each side','3組 x 每邊25秒','Lift through lower waist.','下側腰提起。',['coreBasics']),E('Bird dog','鳥狗式','3 x 7 each side','3組 x 每邊7次','Do not rotate.','不要扭動。',['coreBasics']),E('Squat','深蹲','3 x 14','3組 x 14次','Knees and toes aligned.','膝蓋與腳尖方向一致。',['prisonerSquat']),E('Hollow hold','空心支撐','3 x 22 sec','3組 x 22秒','Stay flat through the trunk.','軀幹保持平穩。',['coreBasics'])]),S('C','Hamstrings + Full Body','腿後肌 + 全身',[E('Step-up','踏台階','3 x 8 each leg','3組 x 每邊8次','Drive through the whole foot.','整隻腳發力。',['reverseLunge']),E('Hamstring slider curl','滑動腿屈曲','3 x 7','3組 x 7次','Keep hips lifted.','臀部保持提起。',['hamSlider']),E('Pike push-up','屈髖掌上壓','3 x 7','3組 x 7次','Push head away from floor.','頭部遠離地面。',['pikePushup']),E('Bear crawl','熊爬','3 x 25 sec','3組 x 25秒','Stay low and controlled.','保持低姿勢及控制。',['bearCrawl']),E('Copenhagen side plank','哥本哈根側平板','2 x 20 sec each side','2組 x 每邊20秒','Keep hips high.','臀部提起。',['copenhagen']),E('Skater steps','滑冰步','3 x 20 sec','3組 x 20秒','Stick the landing each side.','每次落地先穩定。',['bearCrawl'])])];
-wk.w3=[S('A','Lower + Core','下肢 + 核心',[E('Split squat','前後分腿蹲','4 x 8 each leg','4組 x 每邊8次','Use full range with control.','做足幅度並保持控制。',['splitSquat']),E('Single-leg RDL','單腳羅馬尼亞硬拉','3 x 8 each leg','3組 x 每邊8次','Hips square, back flat.','骨盆保持正，下背平。',['singleLegBridge']),E('Push-up','掌上壓','4 x 8','4組 x 8次','Stable trunk.','軀幹穩定。',['coreBasics']),E('Front plank','前平板','3 x 35 sec','3組 x 35秒','Long neck, strong brace.','頸部放長，核心收緊。',['fifaPlank']),E('Dead bug','死蟲式','3 x 8 each side','3組 x 每邊8次','Slow and precise.','慢而準確。',['coreBasics']),E('Calf raise','提踵','3 x 18','3組 x 18次','Full rise every rep.','每次都要完全提起。',['mobility5'])]),S('B','Upper + Trunk + Unilateral','上肢 + 軀幹 + 單腳',[E('Reverse lunge','後跨弓步','4 x 8 each leg','4組 x 每邊8次','Stay stacked over front leg.','重心穩定在前腳。',['reverseLunge','prisonerLunge']),E('Backpack row','背包划船','4 x 10','4組 x 10次','Squeeze shoulder blades.','收緊肩胛骨。',['coreBasics']),E('Side plank','側平板','3 x 30 sec each side','3組 x 每邊30秒','Keep body long.','身體保持伸長。',['coreBasics']),E('Bird dog','鳥狗式','3 x 8 each side','3組 x 每邊8次','Reach heel and hand away.','腳跟和手向外伸。',['coreBasics']),E('Squat','深蹲','3 x 15','3組 x 15次','Stay balanced through foot.','腳底受力平均。',['prisonerSquat']),E('Hollow hold','空心支撐','3 x 25 sec','3組 x 25秒','Exhale and hold shape.','呼氣並保持姿勢。',['coreBasics'])]),S('C','Hamstrings + Full Body','腿後肌 + 全身',[E('Step-up','踏台階','3 x 10 each leg','3組 x 每邊10次','No pushing off from back leg.','後腳不要過度借力。',['reverseLunge']),E('Hamstring slider curl','滑動腿屈曲','3 x 8','3組 x 8次','Slow eccentric.','伸腿時放慢。',['hamSlider']),E('Nordic eccentric','北歐腿後肌離心','2 x 4','2組 x 4次','Body straight, control down.','身體保持一直線，慢慢下降。',['nordic']),E('Pike push-up','屈髖掌上壓','3 x 8','3組 x 8次','Press strongly.','用力推地。',['pikePushup']),E('Bear crawl','熊爬','3 x 30 sec','3組 x 30秒','Move opposite hand and foot.','對側手腳同步。',['bearCrawl']),E('Copenhagen side plank','哥本哈根側平板','3 x 15 sec each side','3組 x 每邊15秒','Controlled pelvis.','骨盆保持穩定。',['copenhagen'])])];
-wk.w4=[S('A','Lower + Core','下肢 + 核心',[E('Split squat','前後分腿蹲','4 x 10 each leg','4組 x 每邊10次','Stay upright and controlled.','身體挺直並受控。',['splitSquat']),E('Single-leg RDL','單腳羅馬尼亞硬拉','3 x 9 each leg','3組 x 每邊9次','Reach long behind you.','後腿向後伸長。',['singleLegBridge']),E('Push-up','掌上壓','4 x 10','4組 x 10次','Keep ribs tucked.','肋骨不要外翻。',['coreBasics']),E('Front plank','前平板','3 x 40 sec','3組 x 40秒','Strong glutes and abs.','臀部及腹部收緊。',['fifaPlank']),E('Dead bug','死蟲式','3 x 8 each side','3組 x 每邊8次','Controlled breathing.','配合呼吸控制。',['coreBasics']),E('Calf raise','提踵','3 x 20','3組 x 20次','Slow lowering.','慢慢放下。',['mobility5'])]),S('B','Upper + Trunk + Unilateral','上肢 + 軀幹 + 單腳',[E('Reverse lunge','後跨弓步','4 x 10 each leg','4組 x 每邊10次','Front knee stays stable.','前膝保持穩定。',['reverseLunge','prisonerLunge']),E('Backpack row','背包划船','4 x 12','4組 x 12次','Pull smoothly.','平順拉動。',['coreBasics']),E('Side plank','側平板','3 x 35 sec each side','3組 x 每邊35秒','Lift hips and hold.','臀部提起並保持。',['coreBasics']),E('Bird dog','鳥狗式','3 x 8 each side','3組 x 每邊8次','No sway in lower back.','下背不要搖擺。',['coreBasics']),E('Squat','深蹲','4 x 12','4組 x 12次','Own the bottom position.','底部位置保持穩定。',['prisonerSquat']),E('Hollow hold','空心支撐','3 x 30 sec','3組 x 30秒','Tight through the middle.','核心中段收緊。',['coreBasics'])]),S('C','Hamstrings + Full Body','腿後肌 + 全身',[E('Step-up','踏台階','4 x 8 each leg','4組 x 每邊8次','Drive knee through.','向上時膝蓋帶動。',['reverseLunge']),E('Hamstring slider curl','滑動腿屈曲','3 x 10','3組 x 10次','Maintain bridge position.','保持臀橋位置。',['hamSlider']),E('Nordic eccentric','北歐腿後肌離心','2 x 5','2組 x 5次','Control every centimetre down.','每一下下降都要控制。',['nordic']),E('Push-up shoulder tap','拍肩掌上支撐','3 x 8 each side','3組 x 每邊8次','Avoid rocking.','身體不要左右擺。',['coreBasics']),E('Bear crawl','熊爬','3 x 30 sec','3組 x 30秒','Knees hover low.','膝蓋保持低位懸空。',['bearCrawl']),E('Skater steps','滑冰步','3 x 25 sec','3組 x 25秒','Land under control.','落地要穩。',['bearCrawl'])])];
-wk.w5=[S('A','Lower + Core','下肢 + 核心',[E('Split squat','前後分腿蹲','3 x 8 each leg','3組 x 每邊8次','Quality first.','先求質素。',['splitSquat']),E('Single-leg glute bridge','單腳臀橋','3 x 10 each leg','3組 x 每邊10次','Stay level.','保持水平。',['singleLegBridge']),E('Push-up','掌上壓','3 x 10','3組 x 10次','Smooth tempo.','節奏平順。',['coreBasics']),E('Front plank','前平板','3 x 35 sec','3組 x 35秒','Brace well.','核心收緊。',['fifaPlank']),E('Dead bug','死蟲式','3 x 8 each side','3組 x 每邊8次','Slow opposite limbs.','對側手腳慢慢伸。',['coreBasics'])]),S('B','Upper + Trunk + Unilateral','上肢 + 軀幹 + 單腳',[E('Backpack row','背包划船','3 x 12','3組 x 12次','Finish elbows back.','最後手肘向後。',['coreBasics']),E('Reverse lunge','後跨弓步','3 x 8 each leg','3組 x 每邊8次','Stay balanced.','保持平衡。',['reverseLunge','prisonerLunge']),E('Side plank','側平板','3 x 30 sec each side','3組 x 每邊30秒','Long body line.','身體一直線。',['coreBasics']),E('Bird dog','鳥狗式','3 x 8 each side','3組 x 每邊8次','Reach and pause.','伸長後停一停。',['coreBasics']),E('Calf raise','提踵','3 x 18','3組 x 18次','Steady rhythm.','節奏穩定。',['mobility5'])]),S('Recovery','Recovery + Mobility','恢復 + 活動度',[E('FIFA 11+ running','FIFA 11+ 跑動部分','5-8 min','5-8分鐘','Stay light and coordinated.','步伐輕巧並講求協調。',['fifaPlaylist','fifaRun','worldsGreatest']),E('Front plank','前平板','2 x 25 sec','2組 x 25秒','Brace and breathe.','收緊並呼吸。',['fifaPlank']),E('Side plank','側平板','2 x 20 sec each side','2組 x 每邊20秒','Lift away from floor.','把身體提離地面。',['coreBasics']),E('Copenhagen short lever','短槓桿哥本哈根','2 x 15 sec each side','2組 x 每邊15秒','Short controlled holds.','短時間但穩定保持。',['copenhagen']),E('Hip mobility + stretch','髖部活動度 + 伸展','10 min','10分鐘','Move slowly through range.','慢慢做到活動幅度。',['mobility5','worldsGreatest','mobility10'])])];
-wk.w6=[S('A','Lower + Core','下肢 + 核心',[E('Split squat','前後分腿蹲','3 x 10 each leg','3組 x 每邊10次','Controlled range.','全程有控制。',['splitSquat']),E('Single-leg RDL','單腳羅馬尼亞硬拉','3 x 8 each leg','3組 x 每邊8次','Stable stance leg.','支撐腳保持穩定。',['singleLegBridge']),E('Push-up','掌上壓','3 x 12','3組 x 12次','Strong trunk line.','軀幹保持一直線。',['coreBasics']),E('Front plank','前平板','3 x 40 sec','3組 x 40秒','Do not sag.','不要塌腰。',['fifaPlank']),E('Dead bug','死蟲式','3 x 8 each side','3組 x 每邊8次','Stay slow.','保持慢速。',['coreBasics'])]),S('C','Hamstrings + Full Body','腿後肌 + 全身',[E('Step-up','踏台階','3 x 8 each leg','3組 x 每邊8次','Full foot on step.','整隻腳放上台階。',['reverseLunge']),E('Hamstring slider curl','滑動腿屈曲','3 x 8','3組 x 8次','Hips high all the way.','全程臀部保持提起。',['hamSlider']),E('Nordic eccentric','北歐腿後肌離心','2 x 4','2組 x 4次','Only if safely anchored.','必須安全固定才做。',['nordic']),E('Bear crawl','熊爬','3 x 25 sec','3組 x 25秒','Smooth small steps.','小步穩定前進。',['bearCrawl']),E('Side plank','側平板','3 x 30 sec each side','3組 x 每邊30秒','Strong top hip.','上側髖部要提起。',['coreBasics'])]),S('Recovery','Recovery + Mobility','恢復 + 活動度',[E('FIFA 11+ running','FIFA 11+ 跑動部分','5-8 min','5-8分鐘','Relaxed and clean technique.','輕鬆但動作乾淨。',['fifaRun','worldsGreatest']),E('Ankle/calf work','足踝 / 小腿訓練','2 x 15','2組 x 15次','Control the reps.','次數要受控。',['mobility5']),E('Mobility flow','活動度流程','10-15 min','10-15分鐘','Steady breathing.','穩定呼吸。',['mobility5','worldsGreatest','mobility10']),E('Front plank','前平板','2 x 25 sec','2組 x 25秒','Short quality set.','短而高質。',['fifaPlank'])])];
-wk.w7=[S('B','Upper + Trunk + Unilateral','上肢 + 軀幹 + 單腳',[E('Reverse lunge','後跨弓步','3 x 8 each leg','3組 x 每邊8次','Stay smooth.','動作流暢。',['reverseLunge','prisonerLunge']),E('Backpack row','背包划船','3 x 10','3組 x 10次','Finish shoulder blades back.','最後肩胛骨向後。',['coreBasics']),E('Push-up shoulder tap','拍肩掌上支撐','3 x 8 each side','3組 x 每邊8次','Minimise trunk movement.','減少身體搖動。',['coreBasics']),E('Hollow hold','空心支撐','3 x 25 sec','3組 x 25秒','Hold shape without strain.','保持姿勢但不要勉強。',['coreBasics']),E('Calf raise','提踵','3 x 20','3組 x 20次','Controlled finish.','有控制完成。',['mobility5'])]),S('C','Hamstrings + Full Body','腿後肌 + 全身',[E('Squat','深蹲','3 x 10','3組 x 10次','Easy quality reps.','以高質素完成。',['prisonerSquat']),E('Hamstring slider curl','滑動腿屈曲','3 x 8','3組 x 8次','Strong hips.','臀部發力。',['hamSlider']),E('Nordic eccentric','北歐腿後肌離心','2 x 4','2組 x 4次','Control down.','慢慢下降。',['nordic']),E('Bear crawl','熊爬','3 x 20 sec','3組 x 20秒','Stay coordinated.','保持協調。',['bearCrawl']),E('Copenhagen side plank','哥本哈根側平板','2 x 20 sec each side','2組 x 每邊20秒','Adductors on, hips up.','收緊內收肌，臀部提起。',['copenhagen'])]),S('Recovery','Recovery + Mobility','恢復 + 活動度',[E('FIFA 11+ routine','FIFA 11+ 流程','8-10 min','8-10分鐘','Light and fresh.','保持輕鬆。',['fifaPlaylist']),E('Hip mobility','髖部活動度','8 min','8分鐘','Slow range.','慢速活動。',['mobility5','worldsGreatest','mobility10']),E('Breathing reset','呼吸放鬆','3-5 min','3-5分鐘','Slow nasal breathing.','用鼻慢慢呼吸。',['mobility5'])])];
-const u22=JSON.parse(JSON.stringify(wk)); Object.values(u22).forEach(arr=>arr.forEach(s=>s.ex.forEach(e=>{if(e.name.en==='Split squat'){e.pre.en=e.pre.en.replace('3 x','4 x');e.pre.zh=e.pre.zh.replace('3組','4組')} if(e.name.en==='Push-up'){e.pre.en=e.pre.en.replace('3 x 8','4 x 10').replace('3 x 9','4 x 12').replace('3 x 10','4 x 12').replace('3 x 12','4 x 14');e.pre.zh=e.pre.zh.replace('3組 x 8次','4組 x 10次').replace('3組 x 9次','4組 x 12次').replace('3組 x 10次','4組 x 12次').replace('3組 x 12次','4組 x 14次')} if(e.name.en==='Backpack row'){e.pre.en=e.pre.en.replace('3 x','4 x');e.pre.zh=e.pre.zh.replace('3組','4組')} if(e.name.en==='Reverse lunge'){e.pre.en=e.pre.en.replace('3 x','4 x');e.pre.zh=e.pre.zh.replace('3組','4組')} if(e.name.en==='Hamstring slider curl'){e.pre.en=e.pre.en.replace('3 x 6','3 x 8').replace('3 x 7','3 x 9').replace('3 x 8','4 x 8').replace('3 x 10','4 x 10');e.pre.zh=e.pre.zh.replace('3組 x 6次','3組 x 8次').replace('3組 x 7次','3組 x 9次').replace('3組 x 8次','4組 x 8次').replace('3組 x 10次','4組 x 10次')} if(e.name.en==='Calf raise'){e.pre.en=e.pre.en.replace('3 x','4 x');e.pre.zh=e.pre.zh.replace('3組','4組')}})));
-const state={lang:'en',week:'w1',squad:'U18',checks:JSON.parse(sessionStorage.getItem('lmya3')||'{}')}; const $=id=>document.getElementById(id); function ds(){return state.squad==='U18'?wk:u22} function save(){sessionStorage.setItem('lmya3',JSON.stringify(state.checks))} function checked(id){return !!state.checks[`${state.squad}:${id}`]} function setCheck(id,v){state.checks[`${state.squad}:${id}`]=v;save();render()}
-function applyText(){const x=t[state.lang];$('title').textContent=x.title;$('subtitle').textContent=x.subtitle;$('heroBadge').textContent=x.heroBadge;$('heroTitle').textContent=x.heroTitle;$('heroText').textContent=x.heroText;$('m1k').textContent=x.m1k;$('m1v').textContent=x.m1v;$('m2k').textContent=x.m2k;$('m2v').textContent=x.m2v;$('m3k').textContent=x.m3k;$('m3v').textContent=x.m3v;$('squadLabel').textContent=x.squad;$('nameLabel').textContent=x.name;$('tip').textContent=x.tip;$('s1k').textContent=x.s1;$('s2k').textContent=x.s2;$('s3k').textContent=x.s3;$('s4k').textContent=x.s4;$('weeksHeader').textContent=x.weeks;$('warmHeader').textContent=x.warm;$('ruleHeader').textContent=x.rules;$('mobHeader').textContent=x.mob;$('resetWeek').textContent=x.resetWeek;$('resetAll').textContent=x.resetAll;$('footer').textContent=x.footer;$('lang').textContent=state.lang==='en'?'繁中':'EN';$('playerName').placeholder=state.lang==='en'?'Optional':'可選填';$('warmList').innerHTML=x.warmItems.map(i=>`<li>${i}</li>`).join('');$('ruleList').innerHTML=x.ruleItems.map(i=>`<li>${i}</li>`).join('');$('mobList').innerHTML=x.mobItems.map(i=>`<li>${i}</li>`).join('')}
-function renderWeeks(){const x=t[state.lang].weeksData;$('weeks').innerHTML=x.map(w=>`<button class="week ${w[0]===state.week?'active':''}" data-w="${w[0]}"><strong>${w[1]} · ${w[2]}</strong><span>${t[state.lang].phase}: ${w[3]}</span><span>${t[state.lang].note}: ${w[4]}</span></button>`).join('');document.querySelectorAll('[data-w]').forEach(b=>b.onclick=()=>{state.week=b.dataset.w;render()})}
-function renderSessions(){const x=t[state.lang].weeksData.find(w=>w[0]===state.week);$('weekNum').textContent=x[1];$('structure').textContent=x[5];$('sessions').innerHTML=ds()[state.week].map((s,si)=>`<section class="session"><div class="sessionHead"><div><div class="badge">${state.lang==='en'?'Session':'課節'} ${s.code}</div><h3 class="sessionTitle">${state.lang==='en'?s.en:s.zh}</h3></div><div class="sub">${t[state.lang].structure}: ${x[5]}</div></div><div class="exerciseList">${s.ex.map((e,ei)=>{const id=`${state.week}:${si}:${ei}`;return `<article class="exercise ${checked(id)?'done':''}"><input type="checkbox" ${checked(id)?'checked':''} data-id="${id}"><div><h4>${state.lang==='en'?e.name.en:e.name.zh}</h4><div class="pills"><span class="pill">${state.lang==='en'?e.pre.en:e.pre.zh}</span><span class="pill">${t[state.lang].cue}: ${state.lang==='en'?e.cue.en:e.cue.zh}</span></div><div class="videos">${e.vids.map(k=>`<div class="videoCard"><div class="videoTitle">${videos[k][0]}</div><div class="videoWrap"><iframe src="${videos[k][1]}" title="${videos[k][0]}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div>`).join('')}</div></div></article>`}).join('')}</div></section>`).join('');document.querySelectorAll('[data-id]').forEach(c=>c.onchange=e=>setCheck(c.dataset.id,e.target.checked))}
-function renderSummary(){const total=Object.values(ds()).flat().reduce((a,s)=>a+s.ex.length,0);const done=Object.keys(state.checks).filter(k=>k.startsWith(state.squad+':')&&state.checks[k]).length;const pct=total?Math.round(done/total*100):0;$('overall').textContent=pct+'%';$('bar').style.width=pct+'%';$('doneCount').textContent=`${done} / ${total}`}
-function render(){applyText();renderWeeks();renderSessions();renderSummary()}
-$('lang').onclick=()=>{state.lang=state.lang==='en'?'zh':'en';render()};$('theme').onclick=()=>{const dark=document.documentElement.getAttribute('data-theme')==='dark';document.documentElement.setAttribute('data-theme',dark?'light':'dark');$('theme').textContent=dark?'🌙':'☀️'};$('squad').onchange=e=>{state.squad=e.target.value;render()};$('resetWeek').onclick=()=>{const prefix=`${state.squad}:${state.week}:`;Object.keys(state.checks).forEach(k=>{if(k.startsWith(prefix)) delete state.checks[k]});save();render()};$('resetAll').onclick=()=>{state.checks={};save();render()};(function(){const d=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',d?'dark':'light');$('theme').textContent=d?'☀️':'🌙'})();render();
-</script>
+
+  <template id="sessionTemplate">
+    <article class="session-card">
+      <div class="session-head">
+        <div>
+          <h3 class="session-title"></h3>
+          <p class="muted session-block-count"></p>
+        </div>
+        <div class="session-progress"></div>
+      </div>
+      <div class="block-progress-bar"><span class="block-progress-fill"></span></div>
+      <div class="blocks-container"></div>
+      <div class="session-footer">
+        <label>
+          <span data-i18n="sessionRpe">Session RPE</span>
+          <select class="session-rpe">
+            <option value="">Select</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select>
+        </label>
+        <button class="secondary save-session-btn" type="button" data-i18n="saveSession">Save session</button>
+      </div>
+    </article>
+  </template>
+
+  <template id="exerciseTemplate">
+    <div class="exercise-card">
+      <div class="exercise-head">
+        <div>
+          <h4 class="exercise-name"></h4>
+          <p class="exercise-focus muted"></p>
+        </div>
+        <div class="badge-row">
+          <span class="badge video-status"></span>
+          <span class="badge exercise-status">Not started</span>
+        </div>
+      </div>
+      <div class="exercise-grid">
+        <div class="exercise-meta"></div>
+        <div class="exercise-video-wrap"></div>
+      </div>
+      <details class="exercise-details">
+        <summary data-i18n="coachingDetails">Coaching details</summary>
+        <div class="detail-columns">
+          <div>
+            <h5 data-i18n="cues">Cues</h5>
+            <ul class="cues-list"></ul>
+          </div>
+          <div>
+            <h5 data-i18n="commonMistakes">Common mistakes</h5>
+            <ul class="mistakes-list"></ul>
+          </div>
+        </div>
+        <div class="detail-columns">
+          <div class="regression-text"></div>
+          <div class="progression-text"></div>
+        </div>
+        <p class="safety-text"></p>
+      </details>
+      <div class="exercise-actions segmented-actions">
+        <button type="button" class="status-btn" data-status="complete"></button>
+        <button type="button" class="status-btn" data-status="partial"></button>
+        <button type="button" class="status-btn" data-status="skipped"></button>
+      </div>
+      <label class="note-field compact-note">
+        <span data-i18n="note">Note</span>
+        <textarea class="exercise-note" rows="2" placeholder="Optional note or reason if skipped"></textarea>
+      </label>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
 </body>
 </html>

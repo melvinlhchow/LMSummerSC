@@ -1,0 +1,1029 @@
+[
+  {
+    "exercise_id": "wu001",
+    "name": "Home warm-up block",
+    "type": "warmup",
+    "focus": "activation",
+    "u18": {
+      "sets": 1,
+      "reps": "5-10 min"
+    },
+    "u22": {
+      "sets": 1,
+      "reps": "5-10 min"
+    },
+    "coaching_cues": [
+      "raise body temperature gradually",
+      "mobilise hips ankles and thoracic spine",
+      "prepare trunk and glutes before strength work"
+    ],
+    "common_mistakes": [
+      "rushing straight into strength work",
+      "skipping warm-up completely"
+    ],
+    "regression": "shorter 4-minute warm-up",
+    "progression": "add controlled running mechanics if space allows",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if pain increases during preparation",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=aIj7832WHJo",
+      "embed_url": "https://www.youtube.com/embed/aIj7832WHJo",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Current draft FIFA 11+ running reference is related, not exact for a single warm-up block",
+      "notes": "Best Full Body Dynamic Warm-Up for Soccer Players (3-phase) – football-specific, no equipment required"
+    }
+  },
+  {
+    "exercise_id": "ex001",
+    "name": "Split squat",
+    "type": "strength",
+    "focus": "lower body strength",
+    "u18": {
+      "sets": 3,
+      "reps": "8 each leg",
+      "tempo": "2-0-1",
+      "rest_seconds": 60
+    },
+    "u22": {
+      "sets": 4,
+      "reps": "8 each leg",
+      "tempo": "2-0-1",
+      "rest_seconds": 75
+    },
+    "coaching_cues": [
+      "stay tall through the torso",
+      "control the lowering phase",
+      "keep front foot flat"
+    ],
+    "common_mistakes": [
+      "front knee collapsing inward",
+      "bouncing at the bottom",
+      "leaning excessively forward"
+    ],
+    "regression": "split squat hold",
+    "progression": "loaded backpack split squat",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if sharp knee pain develops",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=REflwhg0jNs",
+      "embed_url": "https://www.youtube.com/embed/REflwhg0jNs",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, requires final coach verification before player release",
+      "notes": "Exercise Library: Bodyweight Split Squat – step-by-step, clear form, short, no music"
+    }
+  },
+  {
+    "exercise_id": "ex002",
+    "name": "Glute bridge",
+    "type": "strength",
+    "focus": "posterior chain",
+    "u18": {
+      "sets": 3,
+      "reps": "12",
+      "tempo": "2-1-1",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 4,
+      "reps": "12",
+      "tempo": "2-1-1",
+      "rest_seconds": 60
+    },
+    "coaching_cues": [
+      "drive through the heels",
+      "squeeze glutes at the top",
+      "keep ribs down"
+    ],
+    "common_mistakes": [
+      "arching the lower back",
+      "pushing from the toes",
+      "losing pelvic control"
+    ],
+    "regression": "short-range glute bridge",
+    "progression": "feet-elevated glute bridge",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "avoid lumbar overextension",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=1-EEhQDUFTY",
+      "embed_url": "https://www.youtube.com/embed/1-EEhQDUFTY",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Must confirm this is standard double-leg glute bridge, not single-leg only",
+      "notes": "Lean Physique Lab tutorial: Bodyweight Glute Bridge – clear setup/execution/cues"
+    }
+  },
+  {
+    "exercise_id": "ex003",
+    "name": "Push-up",
+    "type": "strength",
+    "focus": "upper body support",
+    "u18": {
+      "sets": 3,
+      "reps": "8-10",
+      "tempo": "2-0-1",
+      "rest_seconds": 60
+    },
+    "u22": {
+      "sets": 4,
+      "reps": "10-12",
+      "tempo": "2-0-1",
+      "rest_seconds": 75
+    },
+    "coaching_cues": [
+      "body stays in one line",
+      "hands under or slightly outside shoulders",
+      "control chest to floor"
+    ],
+    "common_mistakes": [
+      "hips sagging",
+      "neck jutting forward",
+      "partial range reps"
+    ],
+    "regression": "incline push-up",
+    "progression": "tempo push-up",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if shoulder pain is sharp",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=WDIpL0pjun0",
+      "embed_url": "https://www.youtube.com/embed/WDIpL0pjun0",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, but same source is also used for push-up shoulder tap and should be separated",
+      "notes": "NASM official push-up tutorial – trusted source, correct form"
+    }
+  },
+  {
+    "exercise_id": "ex004",
+    "name": "Front plank",
+    "type": "core",
+    "focus": "anterior core",
+    "u18": {
+      "sets": 3,
+      "reps": "25-35 sec",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "35-45 sec",
+      "rest_seconds": 45
+    },
+    "coaching_cues": [
+      "brace the trunk",
+      "keep a straight line from shoulders to heels",
+      "avoid hips dropping"
+    ],
+    "common_mistakes": [
+      "hips too high",
+      "lower back sagging",
+      "holding breath"
+    ],
+    "regression": "kneeling plank",
+    "progression": "long-lever plank",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if lower back discomfort rises",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=K2UZq6uq_mY",
+      "embed_url": "https://www.youtube.com/embed/K2UZq6uq_mY",
+      "status": "Verified Exact",
+      "last_verified_date": "2026-06-29",
+      "reviewer": "Coach review pending final embed test",
+      "review_notes": "Exact front plank reference selected"
+    }
+  },
+  {
+    "exercise_id": "ex005",
+    "name": "Dead bug",
+    "type": "core",
+    "focus": "core control",
+    "u18": {
+      "sets": 3,
+      "reps": "6 each side",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "8 each side",
+      "rest_seconds": 45
+    },
+    "coaching_cues": [
+      "keep low back gently pressed down",
+      "move opposite arm and leg slowly",
+      "breathe out during extension"
+    ],
+    "common_mistakes": [
+      "arching the lower back",
+      "moving too fast",
+      "losing trunk tension"
+    ],
+    "regression": "legs only dead bug",
+    "progression": "longer lever dead bug",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if back pain appears",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=11oAni8LhPU",
+      "embed_url": "https://www.youtube.com/embed/11oAni8LhPU",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, but same link is reused for other exercises and needs dedicated validation",
+      "notes": "Dead Bug Beginner to Advanced – comprehensive, clear progressions"
+    }
+  },
+  {
+    "exercise_id": "ex006",
+    "name": "Calf raise",
+    "type": "strength",
+    "focus": "lower leg",
+    "u18": {
+      "sets": 3,
+      "reps": "15",
+      "tempo": "2-1-1",
+      "rest_seconds": 30
+    },
+    "u22": {
+      "sets": 4,
+      "reps": "15-20",
+      "tempo": "2-1-1",
+      "rest_seconds": 30
+    },
+    "coaching_cues": [
+      "rise fully onto the ball of the foot",
+      "pause briefly at the top",
+      "lower under control"
+    ],
+    "common_mistakes": [
+      "bouncing",
+      "rolling ankles outward",
+      "short range"
+    ],
+    "regression": "double-leg supported calf raise",
+    "progression": "single-leg calf raise",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "use wall support if balance is poor",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=Wh8EXjjr6JU",
+      "embed_url": "https://www.youtube.com/embed/Wh8EXjjr6JU",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, requires final exactness check",
+      "notes": "Exercise Library Bodyweight Calf Raises – step-by-step library format"
+    }
+  },
+  {
+    "exercise_id": "ex007",
+    "name": "Reverse lunge",
+    "type": "strength",
+    "focus": "unilateral strength",
+    "u18": {
+      "sets": 3,
+      "reps": "8 each leg",
+      "tempo": "2-0-1",
+      "rest_seconds": 60
+    },
+    "u22": {
+      "sets": 4,
+      "reps": "8-10 each leg",
+      "tempo": "2-0-1",
+      "rest_seconds": 75
+    },
+    "coaching_cues": [
+      "step back under control",
+      "stay tall",
+      "push through the front foot to return"
+    ],
+    "common_mistakes": [
+      "falling backward",
+      "front heel lifting",
+      "collapsing front knee"
+    ],
+    "regression": "split squat",
+    "progression": "loaded reverse lunge with backpack",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "reduce range if front knee is uncomfortable",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=LJQcRT8d2H4",
+      "embed_url": "https://www.youtube.com/embed/LJQcRT8d2H4",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, requires final coach verification",
+      "notes": "Bodyweight Reverse Lunge 3 Easy Steps – form, modifications, progressions"
+    }
+  },
+  {
+    "exercise_id": "ex008",
+    "name": "Backpack row",
+    "type": "strength",
+    "focus": "upper back",
+    "u18": {
+      "sets": 3,
+      "reps": "10",
+      "tempo": "2-1-1",
+      "rest_seconds": 60
+    },
+    "u22": {
+      "sets": 4,
+      "reps": "10-12",
+      "tempo": "2-1-1",
+      "rest_seconds": 75
+    },
+    "coaching_cues": [
+      "pull elbows back",
+      "keep trunk braced",
+      "control the lowering phase"
+    ],
+    "common_mistakes": [
+      "shrugging shoulders",
+      "rounding the back",
+      "using momentum"
+    ],
+    "regression": "lighter backpack row",
+    "progression": "single-arm backpack row",
+    "equipment": [
+      "backpack"
+    ],
+    "space_required": "small",
+    "safety_note": "keep load stable inside backpack",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=pOtlLJDEE2E",
+      "embed_url": "https://www.youtube.com/embed/pOtlLJDEE2E",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Requires exact home backpack row verification",
+      "notes": "Coach confirmed – backpack row"
+    }
+  },
+  {
+    "exercise_id": "ex009",
+    "name": "Side plank",
+    "type": "core",
+    "focus": "lateral core",
+    "u18": {
+      "sets": 3,
+      "reps": "20-25 sec each side",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "30-40 sec each side",
+      "rest_seconds": 45
+    },
+    "coaching_cues": [
+      "stack shoulders and hips",
+      "push away from the floor",
+      "keep body straight"
+    ],
+    "common_mistakes": [
+      "hips dropping",
+      "rotating shoulders forward",
+      "head collapsing"
+    ],
+    "regression": "kneeling side plank",
+    "progression": "star side plank",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if shoulder pain is sharp",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=Oe9Tp9SvTCE",
+      "embed_url": "https://www.youtube.com/embed/Oe9Tp9SvTCE",
+      "status": "Verified Exact",
+      "last_verified_date": "2026-06-29",
+      "reviewer": "Coach review pending final embed test",
+      "review_notes": "Exact side plank reference selected"
+    }
+  },
+  {
+    "exercise_id": "ex010",
+    "name": "Bird dog",
+    "type": "core",
+    "focus": "trunk stability",
+    "u18": {
+      "sets": 3,
+      "reps": "6 each side",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "8 each side",
+      "rest_seconds": 45
+    },
+    "coaching_cues": [
+      "reach long through opposite arm and leg",
+      "keep hips square",
+      "pause briefly in the extended position"
+    ],
+    "common_mistakes": [
+      "rotating hips",
+      "arching the lower back",
+      "moving too fast"
+    ],
+    "regression": "arm-only or leg-only bird dog",
+    "progression": "bird dog with longer pause",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if back pain increases",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=FoFwZ7vXb-Y",
+      "embed_url": "https://www.youtube.com/embed/FoFwZ7vXb-Y",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Current draft uses shared core-control link and does not satisfy strict exact-video rule",
+      "notes": "Urbacise Bird Dog / Dead Bug combo – clear step-by-step"
+    }
+  },
+  {
+    "exercise_id": "ex011",
+    "name": "Prisoner squat",
+    "type": "strength",
+    "focus": "squat pattern",
+    "u18": {
+      "sets": 3,
+      "reps": "12",
+      "tempo": "2-0-1",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 4,
+      "reps": "12-15",
+      "tempo": "2-0-1",
+      "rest_seconds": 60
+    },
+    "coaching_cues": [
+      "hands stay behind head",
+      "sit between the hips",
+      "keep chest lifted"
+    ],
+    "common_mistakes": [
+      "heels lifting",
+      "rounding upper back",
+      "knees collapsing inward"
+    ],
+    "regression": "bodyweight squat",
+    "progression": "tempo prisoner squat",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "reduce depth if hip pinch occurs",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=bAhzgJ5Ayu0",
+      "embed_url": "https://www.youtube.com/embed/bAhzgJ5Ayu0",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Must verify this is prisoner squat specifically, not only standard squat",
+      "notes": "PureGym Prisoner Squat how-to – clear form cues"
+    }
+  },
+  {
+    "exercise_id": "ex012",
+    "name": "Hollow hold",
+    "type": "core",
+    "focus": "anterior core",
+    "u18": {
+      "sets": 3,
+      "reps": "20 sec",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "25-30 sec",
+      "rest_seconds": 45
+    },
+    "coaching_cues": [
+      "press lower back gently into floor",
+      "reach long through arms and legs",
+      "keep ribs down"
+    ],
+    "common_mistakes": [
+      "legs too high",
+      "arching lower back",
+      "losing trunk tension"
+    ],
+    "regression": "tuck hollow hold",
+    "progression": "long-lever hollow hold",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if lower back discomfort appears",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=3Uthrg1jRKg",
+      "embed_url": "https://www.youtube.com/embed/3Uthrg1jRKg",
+      "status": "Verified Exact",
+      "last_verified_date": "2026-06-29",
+      "reviewer": "Coach review pending final embed test",
+      "review_notes": "Exact hollow hold reference selected"
+    }
+  },
+  {
+    "exercise_id": "ex013",
+    "name": "Bodyweight squat",
+    "type": "strength",
+    "focus": "lower body",
+    "u18": {
+      "sets": 3,
+      "reps": "12",
+      "tempo": "2-0-1",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 4,
+      "reps": "12-15",
+      "tempo": "2-0-1",
+      "rest_seconds": 60
+    },
+    "coaching_cues": [
+      "feet planted",
+      "sit between the hips",
+      "stand up with control"
+    ],
+    "common_mistakes": [
+      "heels lifting",
+      "knees collapsing inward",
+      "rushing reps"
+    ],
+    "regression": "box squat",
+    "progression": "tempo squat",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "reduce depth if movement becomes painful",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=bAhzgJ5Ayu0",
+      "embed_url": "https://www.youtube.com/embed/bAhzgJ5Ayu0",
+      "status": "Pending Review",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, requires final standard squat check",
+      "notes": "Shares URL with ex011 – need a separate bodyweight squat video for this"
+    }
+  },
+  {
+    "exercise_id": "ex014",
+    "name": "Hamstring slider curl",
+    "type": "strength",
+    "focus": "hamstrings",
+    "u18": {
+      "sets": 3,
+      "reps": "6-8",
+      "tempo": "2-0-2",
+      "rest_seconds": 60
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "8-10",
+      "tempo": "2-0-2",
+      "rest_seconds": 75
+    },
+    "coaching_cues": [
+      "bridge hips first",
+      "slide heels slowly",
+      "keep hips elevated as long as possible"
+    ],
+    "common_mistakes": [
+      "dropping hips early",
+      "rushing the slide",
+      "losing heel contact"
+    ],
+    "regression": "short-range slider curl",
+    "progression": "eccentric-only slider curl",
+    "equipment": [
+      "towel or sliders"
+    ],
+    "space_required": "small",
+    "safety_note": "stop if hamstring cramp is severe",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=HAQpsaX3s2o",
+      "embed_url": "https://www.youtube.com/embed/HAQpsaX3s2o",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, requires final exactness check",
+      "notes": "Coach confirmed – hamstring slider curl"
+    }
+  },
+  {
+    "exercise_id": "ex015",
+    "name": "Pike push-up",
+    "type": "strength",
+    "focus": "shoulders",
+    "u18": {
+      "sets": 3,
+      "reps": "6",
+      "tempo": "2-0-1",
+      "rest_seconds": 60
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "8",
+      "tempo": "2-0-1",
+      "rest_seconds": 75
+    },
+    "coaching_cues": [
+      "hips high",
+      "lower head between hands",
+      "push back to start under control"
+    ],
+    "common_mistakes": [
+      "body too flat",
+      "elbows flaring excessively",
+      "short range"
+    ],
+    "regression": "hands-elevated pike push-up",
+    "progression": "feet-elevated pike push-up",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if shoulder pain becomes sharp",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=3r3tvRF1tVA",
+      "embed_url": "https://www.youtube.com/embed/3r3tvRF1tVA",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, requires final coach verification",
+      "notes": "Coach confirmed – pike push-up"
+    }
+  },
+  {
+    "exercise_id": "ex016",
+    "name": "Bear crawl",
+    "type": "core",
+    "focus": "coordination and core",
+    "u18": {
+      "sets": 3,
+      "reps": "20 sec",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "25-30 sec",
+      "rest_seconds": 45
+    },
+    "coaching_cues": [
+      "knees hover just off the floor",
+      "move slowly and quietly",
+      "keep hips stable"
+    ],
+    "common_mistakes": [
+      "hips too high",
+      "taking overly large steps",
+      "rushing"
+    ],
+    "regression": "bear hold",
+    "progression": "longer crawl distance",
+    "equipment": [],
+    "space_required": "small to medium",
+    "safety_note": "use soft surface if wrists are sensitive",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=4d52Y9W2M0g",
+      "embed_url": "https://www.youtube.com/embed/4d52Y9W2M0g",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, requires final exactness check",
+      "notes": "Coach-provided URL – bear crawl"
+    }
+  },
+  {
+    "exercise_id": "ex017",
+    "name": "Copenhagen side plank",
+    "type": "core",
+    "focus": "adductors and core",
+    "u18": {
+      "sets": 2,
+      "reps": "15 sec each side",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "20 sec each side",
+      "rest_seconds": 45
+    },
+    "coaching_cues": [
+      "drive top leg into support",
+      "lift hips fully",
+      "stay long through the body"
+    ],
+    "common_mistakes": [
+      "hips dropping",
+      "shoulder collapsing",
+      "using a support height that is too difficult"
+    ],
+    "regression": "short-lever Copenhagen plank",
+    "progression": "long-lever Copenhagen plank",
+    "equipment": [
+      "bench or sofa edge"
+    ],
+    "space_required": "small",
+    "safety_note": "stop if groin pain is sharp",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=6fmWgOJuBsg",
+      "embed_url": "https://www.youtube.com/embed/6fmWgOJuBsg",
+      "status": "Verified Exact",
+      "last_verified_date": "2026-06-29",
+      "reviewer": "Coach review pending final embed test",
+      "review_notes": "Exact Copenhagen side plank reference selected"
+    }
+  },
+  {
+    "exercise_id": "ex018",
+    "name": "Mountain climber",
+    "type": "conditioning",
+    "focus": "conditioning",
+    "u18": {
+      "sets": 3,
+      "reps": "20 sec",
+      "rest_seconds": 30
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "20-25 sec",
+      "rest_seconds": 30
+    },
+    "coaching_cues": [
+      "hands under shoulders",
+      "keep trunk stable",
+      "drive knees quickly without bouncing hips"
+    ],
+    "common_mistakes": [
+      "hips too high",
+      "feet slapping loudly",
+      "losing shoulder position"
+    ],
+    "regression": "slow mountain climber",
+    "progression": "cross-body mountain climber",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if wrist discomfort is significant",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=ixxk9Qfn61o",
+      "embed_url": "https://www.youtube.com/embed/ixxk9Qfn61o",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, requires final verification",
+      "notes": "Coach confirmed – mountain climber"
+    }
+  },
+  {
+    "exercise_id": "ex019",
+    "name": "Single-leg glute bridge",
+    "type": "strength",
+    "focus": "posterior chain",
+    "u18": {
+      "sets": 3,
+      "reps": "8 each leg",
+      "tempo": "2-1-1",
+      "rest_seconds": 45
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "10 each leg",
+      "tempo": "2-1-1",
+      "rest_seconds": 60
+    },
+    "coaching_cues": [
+      "drive through one heel",
+      "keep pelvis level",
+      "finish with glute squeeze"
+    ],
+    "common_mistakes": [
+      "pelvis twisting",
+      "pushing from the toes",
+      "arching through the lower back"
+    ],
+    "regression": "double-leg glute bridge",
+    "progression": "feet-elevated single-leg glute bridge",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "avoid lumbar arching",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=3NXv0Nany-Q",
+      "embed_url": "https://www.youtube.com/embed/3NXv0Nany-Q",
+      "status": "Verified Exact",
+      "last_verified_date": "2026-06-29",
+      "reviewer": "Coach review pending final embed test",
+      "review_notes": "Exact single-leg glute bridge reference selected"
+    }
+  },
+  {
+    "exercise_id": "ex020",
+    "name": "Step-up",
+    "type": "strength",
+    "focus": "unilateral strength",
+    "u18": {
+      "sets": 3,
+      "reps": "8 each leg",
+      "tempo": "2-0-1",
+      "rest_seconds": 60
+    },
+    "u22": {
+      "sets": 4,
+      "reps": "8-10 each leg",
+      "tempo": "2-0-1",
+      "rest_seconds": 75
+    },
+    "coaching_cues": [
+      "use full foot on step",
+      "drive up under control",
+      "avoid pushing hard from the trailing leg"
+    ],
+    "common_mistakes": [
+      "using too high a step",
+      "knee collapsing inward",
+      "dropping down uncontrolled"
+    ],
+    "regression": "low step-up",
+    "progression": "loaded backpack step-up",
+    "equipment": [
+      "step or sturdy chair"
+    ],
+    "space_required": "small",
+    "safety_note": "use only a stable surface",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=VJtMb2im41c",
+      "embed_url": "https://www.youtube.com/embed/VJtMb2im41c",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Requires exact home step-up verification",
+      "notes": "Coach confirmed – step-up"
+    }
+  },
+  {
+    "exercise_id": "ex021",
+    "name": "Skater steps",
+    "type": "coordination",
+    "focus": "coordination",
+    "u18": {
+      "sets": 3,
+      "reps": "20-25 sec",
+      "rest_seconds": 30
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "25-30 sec",
+      "rest_seconds": 30
+    },
+    "coaching_cues": [
+      "move side to side under control",
+      "stay balanced over the stance leg",
+      "keep steps athletic but not rushed"
+    ],
+    "common_mistakes": [
+      "turning it into a jump instead of controlled steps",
+      "losing balance repeatedly",
+      "poor trunk control"
+    ],
+    "regression": "slow side step balance",
+    "progression": "skater bounds",
+    "equipment": [],
+    "space_required": "small to medium",
+    "safety_note": "maintain control rather than maximal speed",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=e__zRcNlUag",
+      "embed_url": "https://www.youtube.com/embed/e__zRcNlUag",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Current draft marks as Related and does not satisfy strict exact-video rule",
+      "notes": "Coach confirmed – Skater Jumps / lateral steps tutorial"
+    }
+  },
+  {
+    "exercise_id": "ex022",
+    "name": "Single-leg RDL",
+    "type": "strength",
+    "focus": "posterior chain",
+    "u18": {
+      "sets": 3,
+      "reps": "8 each leg",
+      "tempo": "2-0-1",
+      "rest_seconds": 60
+    },
+    "u22": {
+      "sets": 4,
+      "reps": "8 each leg",
+      "tempo": "2-0-1",
+      "rest_seconds": 75
+    },
+    "coaching_cues": [
+      "hinge at the hip",
+      "keep hips square",
+      "reach long through the back leg"
+    ],
+    "common_mistakes": [
+      "rounding the back",
+      "opening the hips",
+      "turning it into a squat"
+    ],
+    "regression": "kickstand RDL",
+    "progression": "loaded backpack single-leg RDL",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "use wall support if balance is poor",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=DPFnfAUCvTA",
+      "embed_url": "https://www.youtube.com/embed/DPFnfAUCvTA",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Draft marks as Exact, requires final exactness check",
+      "notes": "Exercise Library Bodyweight Single Leg RDL – step-by-step, correct cues"
+    }
+  },
+  {
+    "exercise_id": "ex023",
+    "name": "Nordic eccentric",
+    "type": "strength",
+    "focus": "hamstrings",
+    "u18": {
+      "sets": 2,
+      "reps": "4",
+      "rest_seconds": 75
+    },
+    "u22": {
+      "sets": 2,
+      "reps": "5",
+      "rest_seconds": 90
+    },
+    "coaching_cues": [
+      "keep hips extended",
+      "lower slowly",
+      "catch with hands if needed"
+    ],
+    "common_mistakes": [
+      "bending at hips",
+      "falling too quickly",
+      "unsafe anchoring setup"
+    ],
+    "regression": "hamstring slider curl",
+    "progression": "greater eccentric control range",
+    "equipment": [
+      "partner or secure anchor"
+    ],
+    "space_required": "small",
+    "safety_note": "optional only if a safe anchor or partner is available",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=xdylpSjANWA",
+      "embed_url": "https://www.youtube.com/embed/xdylpSjANWA",
+      "status": "Verified Exact",
+      "last_verified_date": "",
+      "reviewer": "",
+      "review_notes": "Keep optional due to home setup risk even if video is exact",
+      "notes": "Nordic Hamstring Curls – ATG coaching, clear eccentric technique"
+    }
+  },
+  {
+    "exercise_id": "ex024",
+    "name": "Push-up shoulder tap",
+    "type": "strength",
+    "focus": "core and upper body",
+    "u18": {
+      "sets": 3,
+      "reps": "8 alternating",
+      "rest_seconds": 60
+    },
+    "u22": {
+      "sets": 3,
+      "reps": "10 alternating",
+      "rest_seconds": 75
+    },
+    "coaching_cues": [
+      "complete a clean push-up first",
+      "tap opposite shoulder without rotating",
+      "keep feet wide enough to stay stable"
+    ],
+    "common_mistakes": [
+      "twisting hips during the tap",
+      "rushing the push-up",
+      "losing trunk control"
+    ],
+    "regression": "high plank shoulder taps",
+    "progression": "tempo push-up shoulder tap",
+    "equipment": [],
+    "space_required": "small",
+    "safety_note": "stop if shoulder or wrist pain rises",
+    "video": {
+      "watch_url": "https://www.youtube.com/watch?v=kF9X6PKVysc",
+      "embed_url": "https://www.youtube.com/embed/kF9X6PKVysc",
+      "status": "Verified Exact",
+      "last_verified_date": "2026-06-29",
+      "reviewer": "Coach review pending final embed test",
+      "review_notes": "Exact push-up shoulder tap reference selected"
+    }
+  }
+]

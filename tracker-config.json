@@ -1,0 +1,83 @@
+{
+  "mobility_blocks": [
+    {
+      "mobility_id": "mob001",
+      "name": "Mobility and recovery finish",
+      "items": [
+        "couch stretch 45 sec each side",
+        "adductor rock-back x8 each side",
+        "hamstring floss x8 each side",
+        "ankle dorsiflexion drives x10 each side",
+        "thoracic rotation x6 each side"
+      ],
+      "recovery_reminders": [
+        "hydrate well",
+        "aim for good sleep quality",
+        "report unusual soreness or pain"
+      ]
+    }
+  ],
+  "readiness_form": {
+    "fields": [
+      {
+        "field_id": "sleep_quality",
+        "type": "scale",
+        "label": "Sleep quality",
+        "min": 1,
+        "max": 5
+      },
+      {
+        "field_id": "soreness_level",
+        "type": "scale",
+        "label": "Soreness level",
+        "min": 1,
+        "max": 5
+      },
+      {
+        "field_id": "pain_flag",
+        "type": "boolean",
+        "label": "Any pain today"
+      },
+      {
+        "field_id": "illness_flag",
+        "type": "boolean",
+        "label": "Feeling ill today"
+      },
+      {
+        "field_id": "available_equipment",
+        "type": "multi-select",
+        "label": "Available equipment",
+        "options": [
+          "none",
+          "backpack",
+          "towel or sliders",
+          "bench or sofa edge",
+          "step or sturdy chair",
+          "partner or secure anchor"
+        ]
+      }
+    ]
+  },
+  "completion_tracking": {
+    "exercise_statuses": [
+      "complete",
+      "partial",
+      "skipped"
+    ],
+    "skip_reason_required": true,
+    "session_rpe_enabled": true,
+    "coach_notes_enabled": true
+  },
+  "player_visibility_rules": {
+    "allowed_video_statuses": [
+      "Verified Exact"
+    ],
+    "blocked_video_statuses": [
+      "Pending Review",
+      "Needs Replacement",
+      "Rejected",
+      "Embed Blocked"
+    ],
+    "fallback_behavior": "Show exercise card with text coaching cues and no embedded video unless coach override is enabled"
+  }
+}
