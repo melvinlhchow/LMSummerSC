@@ -335,8 +335,12 @@ function renderSessions() {
         exStatus.textContent = statusLabel;
         exStatus.classList.add('neutral');
         const vBadge = node.querySelector('.video-status');
-        vBadge.textContent = exercise.video?.status || t('noVideo');
-        vBadge.classList.add(videoBadgeClass(exercise.video?.status));
+        if (state.profile.coachOverride) {
+          vBadge.textContent = exercise.video?.status || t('noVideo');
+          vBadge.classList.add(videoBadgeClass(exercise.video?.status));
+        } else {
+          vBadge.style.display = 'none';
+        }
 
         node.querySelector('.exercise-meta').innerHTML = `
           <div class="meta-panel"><strong>${t('prescription')}</strong><div>${buildPrescription(squadData)}</div></div>
@@ -347,7 +351,7 @@ function renderSessions() {
         const videoWrap = node.querySelector('.exercise-video-wrap');
         if (exercise.video && exercise.video.embed_url && videoAllowed(exercise)) {
           videoWrap.innerHTML = `<iframe class="video-frame" src="${exercise.video.embed_url}" title="${( state.language==='zh' && exercise.name_zh ? exercise.name_zh : exercise.name )}" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="muted"><a href="${exercise.video.watch_url}" target="_blank" rel="noopener noreferrer">${t('openOnYoutube')}</a></p>`;
-        } else {
+        } else if (!exercise.item_videos || !exercise.item_videos.length) {
           let reason = t('unavailableVideo');
           if (exercise.video?.status === 'Pending Review') reason = t('pendingVideo');
           if (exercise.video?.status === 'Needs Replacement') reason = t('replacementVideo');
@@ -357,7 +361,7 @@ function renderSessions() {
 
         
         // Mobility item_videos: show individual video per item
-        if (exercise.item_videos && exercise.item_videos.length && videoAllowed(exercise)) {
+        if (exercise.item_videos && exercise.item_videos.length && (videoAllowed(exercise) || (exercise.video?.status === 'Verified Exact'))) {
           const ivContainer = document.createElement('div');
           ivContainer.className = 'item-videos-wrap';
           exercise.item_videos.forEach(iv => {
@@ -374,10 +378,10 @@ function renderSessions() {
         }
 
         node.querySelector('.cues-list').innerHTML = ((state.language==='zh' && exercise.coaching_cues_zh && exercise.coaching_cues_zh.length ? exercise.coaching_cues_zh : exercise.coaching_cues) || []).map(v => `<li>${v}</li>`).join('');
-        node.querySelector('.mistakes-list').innerHTML = (exercise.common_mistakes || []).map(v => `<li>${v}</li>`).join('');
-        node.querySelector('.regression-text').innerHTML = `<h5>${t('regression')}</h5><p>${exercise.regression || '—'}</p>`;
-        node.querySelector('.progression-text').innerHTML = `<h5>${t('progression')}</h5><p>${exercise.progression || '—'}</p>`;
-        node.querySelector('.safety-text').textContent = `${t('safety')}: ${exercise.safety_note || '—'}`;
+        node.querySelector('.mistakes-list').innerHTML = ((state.language==='zh' && exercise.common_mistakes_zh && exercise.common_mistakes_zh.length ? exercise.common_mistakes_zh : exercise.common_mistakes) || []).map(v => `<li>${v}</li>`).join('');
+        node.querySelector('.regression-text').innerHTML = `<h5>${t('regression')}</h5><p>${(state.language==='zh' && exercise.regression_zh ? exercise.regression_zh : exercise.regression) || '—'}</p>`;
+        node.querySelector('.progression-text').innerHTML = `<h5>${t('progression')}</h5><p>${(state.language==='zh' && exercise.progression_zh ? exercise.progression_zh : exercise.progression) || '—'}</p>`;
+        node.querySelector('.safety-text').textContent = `${t('safety')}: ${(state.language==='zh' && exercise.safety_note_zh ? exercise.safety_note_zh : exercise.safety_note) || '—'}`;
 
         const note = node.querySelector('.exercise-note');
         note.value = exState.note || '';

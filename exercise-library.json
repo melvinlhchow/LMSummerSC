@@ -36,7 +36,18 @@
       "notes": "Best Full Body Dynamic Warm-Up for Soccer Players (3-phase) – football-specific, no equipment required"
     },
     "name_zh": "熱身活動",
-    "focus_zh": "熱身"
+    "focus_zh": "熱身",
+    "coaching_cues_zh": [
+      "逐漸提升體溫",
+      "活動髖部、踝關節及胸椎"
+    ],
+    "common_mistakes_zh": [
+      "熱身太快",
+      "跳過關節活動"
+    ],
+    "regression_zh": "減少動作幅度",
+    "progression_zh": "加入彈力帶或輕度爆發動作",
+    "safety_note_zh": "不要靜態伸展，保持動態移動"
   },
   {
     "exercise_id": "ex001",
@@ -80,7 +91,20 @@
       "notes": "Exercise Library: Bodyweight Split Squat – step-by-step, clear form, short, no music"
     },
     "name_zh": "分腿深蹲",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "軀幹保持挺直",
+      "控制下降速度",
+      "後膝輕輕接近地面"
+    ],
+    "common_mistakes_zh": [
+      "軀幹前傾",
+      "前膝超出腳趾",
+      "下降太快"
+    ],
+    "regression_zh": "縮短動作幅度或扶牆輔助",
+    "progression_zh": "加背包負重",
+    "safety_note_zh": "確保後膝不撞地"
   },
   {
     "exercise_id": "ex002",
@@ -124,7 +148,20 @@
       "notes": "Lean Physique Lab tutorial: Bodyweight Glute Bridge – clear setup/execution/cues"
     },
     "name_zh": "臀橋",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "用腳跟發力",
+      "頂部擠緊臀部",
+      "保持脊椎中立"
+    ],
+    "common_mistakes_zh": [
+      "過度弓腰",
+      "膝蓋向內塌",
+      "用動量而非控制"
+    ],
+    "regression_zh": "縮短動作幅度",
+    "progression_zh": "單腿臀橋",
+    "safety_note_zh": "頂部不要過度伸展腰部"
   },
   {
     "exercise_id": "ex003",
@@ -168,7 +205,20 @@
       "notes": "NASM official push-up tutorial – trusted source, correct form"
     },
     "name_zh": "掌上壓",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "身體保持一直線",
+      "雙手於肩膊正下方或稍外",
+      "核心收緊"
+    ],
+    "common_mistakes_zh": [
+      "臀部下塌",
+      "頭頸前伸",
+      "手肘張開太大"
+    ],
+    "regression_zh": "跪地掌上壓",
+    "progression_zh": "加背包負重",
+    "safety_note_zh": "保持肩胛骨穩定"
   },
   {
     "exercise_id": "ex004",
@@ -209,7 +259,20 @@
       "review_notes": "Exact front plank reference selected"
     },
     "name_zh": "平板支撐",
-    "focus_zh": "核心"
+    "focus_zh": "核心",
+    "coaching_cues_zh": [
+      "收緊軀幹",
+      "肩膊至腳跟保持直線",
+      "正常呼吸"
+    ],
+    "common_mistakes_zh": [
+      "臀部過高或下塌",
+      "憋氣",
+      "肩膊聳起"
+    ],
+    "regression_zh": "膝蓋著地版本",
+    "progression_zh": "加手臂或腿部移動",
+    "safety_note_zh": "感到腰痛時立即停止"
   },
   {
     "exercise_id": "ex005",
@@ -251,7 +314,20 @@
       "notes": "Dead Bug Beginner to Advanced – comprehensive, clear progressions"
     },
     "name_zh": "死蟲式",
-    "focus_zh": "核心"
+    "focus_zh": "核心",
+    "coaching_cues_zh": [
+      "下背輕壓地面",
+      "對側手腳緩慢移動",
+      "保持穩定不搖晃"
+    ],
+    "common_mistakes_zh": [
+      "腰部拱起",
+      "動作過快",
+      "手腳未完全伸展"
+    ],
+    "regression_zh": "只移動腳或只移動手",
+    "progression_zh": "加阻力帶",
+    "safety_note_zh": "下背離地時停止動作"
   },
   {
     "exercise_id": "ex006",
@@ -295,7 +371,20 @@
       "notes": "Exercise Library Bodyweight Calf Raises – step-by-step library format"
     },
     "name_zh": "提踵",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "用前腳掌發力上升",
+      "頂部停頓收緊小腿",
+      "緩慢下降"
+    ],
+    "common_mistakes_zh": [
+      "彈跳動作",
+      "動作幅度不足",
+      "重心不均"
+    ],
+    "regression_zh": "雙腿提踵",
+    "progression_zh": "單腿提踵",
+    "safety_note_zh": "踝關節不穩定時扶牆輔助"
   },
   {
     "exercise_id": "ex007",
@@ -339,7 +428,20 @@
       "notes": "Bodyweight Reverse Lunge 3 Easy Steps – form, modifications, progressions"
     },
     "name_zh": "後弓步",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "後腳跨出",
+      "雙膝彎曲至90度",
+      "軀幹保持直立"
+    ],
+    "common_mistakes_zh": [
+      "前膝超出腳趾",
+      "軀幹前傾",
+      "後膝重擊地面"
+    ],
+    "regression_zh": "縮短步幅",
+    "progression_zh": "加背包負重",
+    "safety_note_zh": "後膝輕輕控制下降"
   },
   {
     "exercise_id": "ex008",
@@ -385,7 +487,20 @@
       "notes": "Coach confirmed – backpack row"
     },
     "name_zh": "背包划船",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "肩胛骨向後收緊",
+      "手肘貼近身體",
+      "控制放下速度"
+    ],
+    "common_mistakes_zh": [
+      "用動量搖晃",
+      "肩膊聳起",
+      "動作幅度不足"
+    ],
+    "regression_zh": "減輕背包重量",
+    "progression_zh": "增加背包重量",
+    "safety_note_zh": "確保背包固定不移動"
   },
   {
     "exercise_id": "ex009",
@@ -426,7 +541,20 @@
       "review_notes": "Exact side plank reference selected"
     },
     "name_zh": "側板支撐",
-    "focus_zh": "核心"
+    "focus_zh": "核心",
+    "coaching_cues_zh": [
+      "身體保持一直線",
+      "腰部不下塌",
+      "正常呼吸"
+    ],
+    "common_mistakes_zh": [
+      "臀部過高",
+      "支撐肩膊不穩",
+      "憋氣"
+    ],
+    "regression_zh": "膝蓋著地版本",
+    "progression_zh": "加腿部抬起",
+    "safety_note_zh": "肩膊感到不適時停止"
   },
   {
     "exercise_id": "ex010",
@@ -468,7 +596,20 @@
       "notes": "Urbacise Bird Dog / Dead Bug combo – clear step-by-step"
     },
     "name_zh": "鳥狗式",
-    "focus_zh": "核心"
+    "focus_zh": "核心",
+    "coaching_cues_zh": [
+      "對側手腳同時伸展",
+      "保持身體穩定不搖晃",
+      "緩慢控制動作"
+    ],
+    "common_mistakes_zh": [
+      "腰部下塌",
+      "動作過快",
+      "手腳未完全伸展"
+    ],
+    "regression_zh": "只移動手或只移動腳",
+    "progression_zh": "手腳加阻力帶",
+    "safety_note_zh": "確保脊椎中立位置"
   },
   {
     "exercise_id": "ex011",
@@ -512,7 +653,20 @@
       "notes": "PureGym Prisoner Squat how-to – clear form cues"
     },
     "name_zh": "囚犯式深蹲",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "雙手放頭後",
+      "手肘張開",
+      "下蹲時挺胸"
+    ],
+    "common_mistakes_zh": [
+      "手肘前收",
+      "軀幹過度前傾",
+      "膝蓋內塌"
+    ],
+    "regression_zh": "手放胸前",
+    "progression_zh": "加背包負重",
+    "safety_note_zh": "膝蓋對準腳趾方向"
   },
   {
     "exercise_id": "ex012",
@@ -553,7 +707,20 @@
       "review_notes": "Exact hollow hold reference selected"
     },
     "name_zh": "俯身Y/T/W",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "控制肩胛骨動作",
+      "Y/T/W各有不同角度",
+      "動作緩慢有控制"
+    ],
+    "common_mistakes_zh": [
+      "用頸部代償",
+      "動作幅度不足",
+      "速度太快"
+    ],
+    "regression_zh": "減少重複次數",
+    "progression_zh": "加輕量負重",
+    "safety_note_zh": "肩膊有痛感時停止"
   },
   {
     "exercise_id": "ex013",
@@ -597,7 +764,20 @@
       "notes": "Lean Physique Lab: Bodyweight Squat – step-by-step, correct cues, separate from prisoner squat"
     },
     "name_zh": "自重深蹲",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "臀部向後推",
+      "大腿平行地面",
+      "腳跟發力站起"
+    ],
+    "common_mistakes_zh": [
+      "膝蓋內塌",
+      "腰部圓背",
+      "腳跟離地"
+    ],
+    "regression_zh": "縮短動作幅度",
+    "progression_zh": "加背包負重",
+    "safety_note_zh": "膝蓋對準腳趾，不超出腳趾"
   },
   {
     "exercise_id": "ex014",
@@ -643,7 +823,20 @@
       "notes": "Coach confirmed – hamstring slider curl"
     },
     "name_zh": "滑行腿彎舉",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "腳跟向臀部捲起",
+      "臀部保持貼地",
+      "控制伸直速度"
+    ],
+    "common_mistakes_zh": [
+      "臀部離地",
+      "動作太快",
+      "膝蓋張開"
+    ],
+    "regression_zh": "減少重複次數",
+    "progression_zh": "單腿滑行腿彎舉",
+    "safety_note_zh": "確保滑行面平滑"
   },
   {
     "exercise_id": "ex015",
@@ -687,7 +880,20 @@
       "notes": "Coach confirmed – pike push-up"
     },
     "name_zh": "窄距掌上壓",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "雙手窄於肩寬",
+      "手肘向後收",
+      "身體保持一直線"
+    ],
+    "common_mistakes_zh": [
+      "手肘外展",
+      "臀部下塌",
+      "頭頸前伸"
+    ],
+    "regression_zh": "跪地版本",
+    "progression_zh": "加暫停",
+    "safety_note_zh": "手腕感到不適時調整手部角度"
   },
   {
     "exercise_id": "ex016",
@@ -729,7 +935,20 @@
       "notes": "Coach-provided URL – bear crawl"
     },
     "name_zh": "熊爬",
-    "focus_zh": "核心"
+    "focus_zh": "核心",
+    "coaching_cues_zh": [
+      "四肢爬行保持穩定",
+      "膝蓋輕輕離地約一吋",
+      "緩慢有控制地移動"
+    ],
+    "common_mistakes_zh": [
+      "臀部過高",
+      "移動太快",
+      "呼吸不穩"
+    ],
+    "regression_zh": "保持靜止熊式姿勢",
+    "progression_zh": "加快速度或向後爬行",
+    "safety_note_zh": "膝蓋不要完全貼地"
   },
   {
     "exercise_id": "ex017",
@@ -772,7 +991,20 @@
       "review_notes": "Exact Copenhagen side plank reference selected"
     },
     "name_zh": "Copenhagen側板",
-    "focus_zh": "核心"
+    "focus_zh": "核心",
+    "coaching_cues_zh": [
+      "腳放在椅子或床邊",
+      "身體成直線",
+      "核心收緊"
+    ],
+    "common_mistakes_zh": [
+      "臀部下塌",
+      "支撐肩膊不穩",
+      "憋氣"
+    ],
+    "regression_zh": "雙腳版本",
+    "progression_zh": "延長保持時間",
+    "safety_note_zh": "肩膊或髖部感到疼痛時停止"
   },
   {
     "exercise_id": "ex018",
@@ -814,7 +1046,20 @@
       "notes": "Coach confirmed – mountain climber"
     },
     "name_zh": "登山者式",
-    "focus_zh": "核心"
+    "focus_zh": "核心",
+    "coaching_cues_zh": [
+      "核心收緊",
+      "膝蓋交替向胸部靠近",
+      "身體保持穩定"
+    ],
+    "common_mistakes_zh": [
+      "臀部彈跳",
+      "腰部下塌",
+      "速度過快失去控制"
+    ],
+    "regression_zh": "減慢速度",
+    "progression_zh": "加快速度",
+    "safety_note_zh": "手腕不適時改用拳頭支撐"
   },
   {
     "exercise_id": "ex019",
@@ -857,7 +1102,20 @@
       "review_notes": "Exact single-leg glute bridge reference selected"
     },
     "name_zh": "單腿平板支撐",
-    "focus_zh": "核心"
+    "focus_zh": "核心",
+    "coaching_cues_zh": [
+      "保持身體一直線",
+      "收緊支撐側臀部",
+      "正常呼吸"
+    ],
+    "common_mistakes_zh": [
+      "臀部旋轉",
+      "腰部下塌",
+      "憋氣"
+    ],
+    "regression_zh": "雙腿版本",
+    "progression_zh": "加手臂抬起",
+    "safety_note_zh": "腰痛時立即停止"
   },
   {
     "exercise_id": "ex020",
@@ -903,7 +1161,20 @@
       "notes": "Coach confirmed – step-up"
     },
     "name_zh": "踏台",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "用前腳全腳掌踩上",
+      "保持軀幹挺直",
+      "控制下降動作"
+    ],
+    "common_mistakes_zh": [
+      "用膝蓋衝勁",
+      "軀幹前傾",
+      "下降太快"
+    ],
+    "regression_zh": "降低台階高度",
+    "progression_zh": "加背包負重",
+    "safety_note_zh": "確保台階穩固"
   },
   {
     "exercise_id": "ex021",
@@ -945,7 +1216,20 @@
       "notes": "Coach confirmed – Skater Jumps / lateral steps tutorial"
     },
     "name_zh": "側滑步",
-    "focus_zh": "速度"
+    "focus_zh": "速度",
+    "coaching_cues_zh": [
+      "側向跨步",
+      "落地時膝蓋微彎",
+      "保持重心低"
+    ],
+    "common_mistakes_zh": [
+      "落地時膝蓋打直",
+      "步幅太小",
+      "軀幹前傾"
+    ],
+    "regression_zh": "減小側步幅度",
+    "progression_zh": "加速度或加跳躍",
+    "safety_note_zh": "確保地面不滑"
   },
   {
     "exercise_id": "ex022",
@@ -989,7 +1273,20 @@
       "notes": "Exercise Library Bodyweight Single Leg RDL – step-by-step, correct cues"
     },
     "name_zh": "單腿羅馬尼亞硬舉",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "臀部向後推",
+      "軀幹前傾保持直背",
+      "懸空腳保持平衡"
+    ],
+    "common_mistakes_zh": [
+      "圓背",
+      "支撐腿膝蓋鎖死",
+      "搖晃失衡"
+    ],
+    "regression_zh": "手扶牆輔助",
+    "progression_zh": "加背包負重",
+    "safety_note_zh": "感到腰部代償時停止"
   },
   {
     "exercise_id": "ex023",
@@ -1033,7 +1330,20 @@
       "notes": "Nordic Hamstring Curls – ATG coaching, clear eccentric technique"
     },
     "name_zh": "北歐彎舉（離心）",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "固定腳踝",
+      "緩慢向前下降",
+      "用雙手撐地控制速度"
+    ],
+    "common_mistakes_zh": [
+      "下降太快",
+      "臀部彎曲",
+      "腰部扭動"
+    ],
+    "regression_zh": "用雙手輔助下降",
+    "progression_zh": "減少手部輔助",
+    "safety_note_zh": "此動作強度極高，初學者需充分熱身"
   },
   {
     "exercise_id": "ex024",
@@ -1074,6 +1384,19 @@
       "review_notes": "Exact push-up shoulder tap reference selected"
     },
     "name_zh": "背牆深蹲",
-    "focus_zh": "力量"
+    "focus_zh": "力量",
+    "coaching_cues_zh": [
+      "背部貼牆",
+      "大腿平行地面",
+      "膝蓋對準腳趾"
+    ],
+    "common_mistakes_zh": [
+      "膝蓋內塌",
+      "腳跟離地",
+      "憋氣"
+    ],
+    "regression_zh": "縮短保持時間",
+    "progression_zh": "加單腿抬起",
+    "safety_note_zh": "膝蓋感到壓力時升高坐的角度"
   }
 ]
